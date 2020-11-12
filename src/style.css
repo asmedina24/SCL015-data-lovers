@@ -1,0 +1,151 @@
+/* Pantalla desktop */
+*{
+    margin: 0px;
+}
+body{
+    background: url("img/fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+}
+.logoP{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.logo1{
+    width: 30%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px black);
+    margin-right: 150px;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 220px;
+    margin-top: 50px;
+}
+.buttonsI{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.buttonI{
+    width: 40%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px black);
+    cursor: pointer;
+}
+.buttonsII{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: -5px;
+}
+.buttonII{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 5px 5px black);
+    margin-right: -10%;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 70px;
+    margin-right: 60px;
+}
+#footer{
+    font-family: Pokemon Solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2.5pt;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* pantalla mobile */
+@media screen and (max-width: 411px){
+    *{
+        margin: 0px;
+    }
+    body{
+        background: url("img/fondo3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    .logoP{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+    }
+    .logo1{
+        width: 80%;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px black);
+        margin-right: 0px;
+    }
+    .box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0px;
+        margin-top: 60px;
+    }
+    .buttonsI{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    .buttonI{
+        width: 55%;
+        height: auto;
+        filter: drop-shadow(0px 5px 5px black);
+        padding-right: 10%;
+    }
+    .buttonsII{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    .buttonII{
+        width: auto;
+        height: auto;
+        filter: drop-shadow(0px 5px 5px black);
+        margin-right: 0%;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-right: 0px;
+        padding-top: 0px;
+    }
+    #footer{
+        font-family: Pokemon Solid;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        text-align: center;
+        color: #FFCB05;
+        -webkit-text-stroke: 0.1px#2E91BE;
+        letter-spacing: 2.5pt;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+

@@ -1,6 +1,10 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
+import data from './data/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
-
-console.log(example, data);
+let footer= document.getElementById("footer")
+footer.innerHTML="Todos los derechos reservados para Data lovers < L >"
+document.getElementById("Pagtwo").onclick = function() {
+    //function pastsecond() {
+        document.getElementById("Pagtwo").innerHTML = location.href='index2.html';
+    }
+// eslint-disable-next-line no-console
+console.log(data);
