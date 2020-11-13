@@ -38,7 +38,7 @@ header{
     display: flex;
     align-content: center;
     flex-flow: wrap;
-    /*flex-direction: column;*/
+    flex-direction: column;
     background: #31A9CE;
     border: 3px solid #F5ED02;
     box-sizing: border-box;
@@ -50,7 +50,7 @@ header{
     align-items: flex-end;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 120%;
     line-height: 35px;
     -webkit-text-fill-color: #FFCB05;
     -webkit-text-stroke: 1px#2E91BE;
