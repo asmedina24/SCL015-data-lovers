@@ -30,12 +30,15 @@ header{
 .nav{
     display: flex;
     justify-content: center; 
+    flex-flow: row wrap;
+    
+    
 }
 .Btnmenu1{
     display: flex;
     align-content: center;
     flex-flow: wrap;
-    flex-direction: column;
+    /*flex-direction: column;*/
     background: #31A9CE;
     border: 3px solid #F5ED02;
     box-sizing: border-box;
@@ -53,10 +56,15 @@ header{
     -webkit-text-stroke: 1px#2E91BE;
     letter-spacing: 2.5pt;
     text-shadow: 2px 2px 3px black;
+    margin: 20px;
+       
+    
 }
 .nameBtn1{
     display: flex;
     margin: auto;
+    
+  
 }
 .ulBtn1 { 
     display: none; 
@@ -105,6 +113,7 @@ header{
     -webkit-text-stroke: 1px#2E91BE;
     letter-spacing: 2.5pt;
     text-shadow: 2px 2px 3px black;
+    margin: 20px;
 }
 .nameBtn2{
     display: flex;
@@ -157,6 +166,7 @@ header{
     -webkit-text-stroke: 1px#2E91BE;
     letter-spacing: 2.5pt;
     text-shadow: 2px 2px 3px black;
+    margin: 20px;
 }
 .nameBtn3{
     display: flex;
@@ -186,4 +196,10 @@ header{
 
 .Btnmenu3:hover > .ulBtn3 > .liBtn3:hover > a {
      color:  red; 
+}
+
+.pokebola{
+    width: 5%;
+    margin-left: 80%;
+    display: block;
 }
