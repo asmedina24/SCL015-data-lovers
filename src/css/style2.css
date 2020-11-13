@@ -1,4 +1,8 @@
 /* Pantalla desktop */
+@font-face {
+    font-family: 'pokemon-solid';
+    src: url('/src/font/pokemonsolid.ttf') format('truetype')
+}
 *{
     margin: 0px;
 }
@@ -8,7 +12,7 @@ a:link, a:visited, a:active {
     -webkit-text-stroke: 1px#2E91BE;
 }
 body{
-    background: url("img/fondo2.jpg");
+    background: url("/src/img/fondo2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -107,7 +111,7 @@ header{
     align-items: flex-end;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 120%;
     line-height: 35px;
     -webkit-text-fill-color: #FFCB05;
     -webkit-text-stroke: 1px#2E91BE;
@@ -160,7 +164,7 @@ header{
     align-items: flex-end;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 120%;
     line-height: 35px;
     -webkit-text-fill-color: #FFCB05;
     -webkit-text-stroke: 1px#2E91BE;
@@ -201,5 +205,5 @@ header{
 .pokebola{
     width: 5%;
     margin-left: 80%;
-    display: block;
+    display: flex;
 }
