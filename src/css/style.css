@@ -8,7 +8,7 @@
     margin: 0px;
 }
 body{
-    background: url("./img/fondo1.jpg");
+    background: url("../img/fondo1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
