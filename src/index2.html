@@ -9,38 +9,73 @@
 <body>
 <header class="header">
     <img id="logo2" src="img/Logo1.png" alt="Logo2">
+    <div id="search">
+      <input type="search" id="search1" placeholder="Buscar">
+    <img src="img/lupa.png" id="lupa" alt="">
+    </div>
 </header>
-    <a href="index.html"><img src="img/pokebola.png" alt="pokebola" class="pokebola"></a>
-
-    
-    <div class="nav">
-    <div class="Btnmenu1">
-        <p class="nameBtn1">Orden </p> 
-        <ul class="ulBtn1">
-          <li class="liBtn1"><a href="#">A - Z</a></li>
-          <li class="liBtn1"><a href="#">Z - A</a></li>
-        </ul>
-    </div>
-    <div class="Btnmenu2">
-        <p class="nameBtn2">Tipo </p> 
-        <ul class="ulBtn2">
-          <li class="liBtn2"><a href="#">Planta</a></li>
-          <li class="liBtn2"><a href="#">Fuego</a></li>
-          <li class="liBtn2"><a href="#">Agua</a></li>
-        </ul>
-    </div>
-    <div class="Btnmenu3">
-        <p class="nameBtn3">Huevos </p> 
-        <ul class="ulBtn3">
-          <li class="liBtn3"><a href="#">2 KM</a></li>
-          <li class="liBtn3"><a href="#">5 KM</a></li>
-          <li class="liBtn3"><a href="#">7 KM</a></li>
-          <li class="liBtn3"><a href="#">10 KM</a></li>
-        </ul>
-    </div>
+<div class="pokeball"><a href="index.html"><img src="img/pokebola.png" alt="pokebola" class="pokeball1"></a></div>
+<div class="nav">
+    <form action="">
+        <div class="menubox">
+            <div class="selectMenu" id="selectMenu">
+                 <p class="titleMenu">Orden</p>
+             </div>
+             <div class="option" id="opmenu">
+                 <a href="javascript" id="AZ"  class="AZ">
+                     <h1 class="op">A - Z</h1>
+                 </a>
+                <a href="javascript" id="ZA" class="options">
+                    <h1 class="op">Z - A</h1>
+                </a>
+            </div>
+        </div>
+        <div class="menubox">    
+            <div class="selectMenu" id="selectMenu2">
+                <p class="titleMenu">Tipos</p>
+            </div>
+            <div class="option" id="opmenu2">
+                <a href="" class="options">
+                    <h1 class="op">Planta</h1>
+                </a>
+               <a href="" class="options">
+                   <h1 class="op">Agua</h1>
+               </a>
+               <a href="" class="options">
+                <h1 class="op">Fuego</h1>
+            </a>
+            <a href="" class="options">
+                <h1 class="op">Tierra</h1>
+            </a>
+            <a href="" class="options">
+                <h1 class="op">Hada</h1>
+            </a>
+           </div>
+        </div>
+        <div class="menubox">    
+            <div class="selectMenu" id="selectMenu3">
+                <p class="titleMenu">Huevos</p>
+            </div>
+            <div class="option" id="opmenu3">
+                <a href="" class="options">
+                    <h1 class="op">2 KM</h1>
+                </a>
+               <a href="" class="options">
+                   <h1 class="op">5 KM</h1>
+               </a>
+               <a href="" class="options">
+                <h1 class="op">7 KM</h1>
+            </a>
+            <a href="" class="options">
+                <h1 class="op">10 KM</h1>
+            </a>
+           </div>
+        </div>
+    </form>
 </div>
-<!-- <footer id="footer" class="footer"></footer> -->
-<script src="main.js" ></script>
+<div id="content"></div>
+<footer id="footer" class="footer">Todos los derechos reservados para Data lovers &#60;L &#62;</footer>
+<script src="main.js" type="module" ></script>
 <!-- type="module" -->
 </body>
 </html>

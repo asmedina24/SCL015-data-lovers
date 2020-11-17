@@ -1,14 +1,14 @@
 /* Pantalla desktop */
 @font-face {
     font-family: 'pokemon-solid';
-    src: url('/src/font/pokemonsolid.ttf') format('truetype')
+    src: url('../font/pokemonsolid.ttf') format('truetype')
 }
 
 *{
     margin: 0px;
 }
 body{
-    background: url("img/fondo1.jpg");
+    background: url("../img/fondo1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -67,7 +67,7 @@ body{
     margin-right: -60px;
 }
 #footer{
-    font-family: Pokemon Solid;
+    font-family: 'pokemon-solid';
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -141,7 +141,7 @@ body{
         margin-right: -60px;
     }
     #footer{
-        font-family: Pokemon Solid;
+        font-family: 'pokemon-solid';
         font-style: normal;
         font-weight: normal;
         font-size: 38px;
