@@ -9,9 +9,11 @@ const selectTypes=document.querySelector("#selectMenu2");
 const optionsTypes=document.querySelector("#opmenu2");
 const selectEggs=document.querySelector("#selectMenu3");
 const optionsEggs=document.querySelector("#opmenu3");
-const loader=document.querySelector(".loader");
+// const loader=document.querySelector(".loader");
 const AZ=document.getElementById("AZ")
 const ZA=document.getElementById("ZA")
+const num=document.getElementById("1-251")
+const revenum=document.getElementById("251-1")
 
 
 selectOrden.addEventListener("click",()=>{
@@ -44,7 +46,21 @@ ZA.addEventListener("click",(event)=>{
     mostrarlista()
 }
 )
+num.addEventListener("click",(event)=>{
+    event.preventDefault();
+    location.reload()
+}
+)
+revenum.addEventListener("click",(event)=>{
+    event.preventDefault();
+    pokemon.reverse(pokemon.num)
+    mostrarlista()
+}
+)
 mostrarlista()
+
+
+
 
 
 // funciones.ordenarZA(pokemon);
