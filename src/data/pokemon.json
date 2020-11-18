@@ -1,7 +1,9 @@
 {
-  "pokemon": [{
+  "pokemon": [
+    {
     "num": "001",
     "name": "bulbasaur",
+
     "generation": {
       "num": "generation i",
       "name": "kanto"
