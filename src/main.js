@@ -1,57 +1,78 @@
 import data from "./data/pokemon.js"
 import funciones from './data.js'
 
-let pokemon=data.pokemon;
-let pokelist=document.getElementById("content");
-const selectOrden=document.querySelector("#selectMenu");
-const optionsOrden=document.querySelector("#opmenu");
-const selectTypes=document.querySelector("#selectMenu2");
-const optionsTypes=document.querySelector("#opmenu2");
-const selectEggs=document.querySelector("#selectMenu3");
-const optionsEggs=document.querySelector("#opmenu3");
+// window.addEventListener("load",function(){
+//     document.getElementById("loader").classList.toggle("loader2")
+// })
+
+let pokemon = data.pokemon;
+let pokelist = document.getElementById("content");
+const selectOrden = document.querySelector("#selectMenu");
+const optionsOrden = document.querySelector("#opmenu");
+const selectTypes = document.querySelector("#selectMenu2");
+const optionsTypes = document.querySelector("#opmenu2");
+const selectEggs = document.querySelector("#selectMenu3");
+const optionsEggs = document.querySelector("#opmenu3");
 // const loader=document.querySelector(".loader");
-const AZ=document.getElementById("AZ")
-const ZA=document.getElementById("ZA")
-const num=document.getElementById("1-251")
-const revenum=document.getElementById("251-1")
+const AZ = document.getElementById("AZ")
+const ZA = document.getElementById("ZA")
+const num = document.getElementById("1-251")
+const revenum = document.getElementById("251-1")
 
 
-selectOrden.addEventListener("click",()=>{
+selectOrden.addEventListener("click", () => {
     optionsOrden.classList.toggle("active");
 })
-selectTypes.addEventListener("click",()=>{
+selectTypes.addEventListener("click", () => {
     optionsTypes.classList.toggle("active");
 })
-selectEggs.addEventListener("click",()=>{
+selectEggs.addEventListener("click", () => {
     optionsEggs.classList.toggle("active");
 })
-function mostrarlista(){
-    pokelist.innerHTML=""
-    for(let i=0;i<pokemon.length; ++i){
-        pokelist.innerHTML+=(`<div class="pokelist">
+
+
+function mostrarlista() {
+    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("loader").style.display = "block";
+    let tiempo = 1
+    setTimeout(function () {
+        pokelist.innerHTML = ""
+        for (let i = 0; i < pokemon.length; ++i) {
+            pokelist.innerHTML += (`<div class="pokelist">
         <img class="pokeimg" src="${pokemon[i].img}"/>
         <p class="namepoke">${pokemon[i].name}</p></div>`);
-    }
+        tiempo*=i
+        }
+    },tiempo);
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+    }, 1000);
+    
 }
 
-AZ.addEventListener("click",(event)=>{
-    event.preventDefault();
-    funciones.ordenarAZ(pokemon) 
+
+AZ.addEventListener("click", (event) => {
+    event.preventDefault()
+    funciones.ordenarAZ(pokemon)
     mostrarlista()
 }
 )
-ZA.addEventListener("click",(event)=>{
+ZA.addEventListener("click", (event) => {
+
     event.preventDefault();
-    funciones.ordenarZA(pokemon) 
+
+    funciones.ordenarZA(pokemon)
     mostrarlista()
+
+
 }
 )
-num.addEventListener("click",(event)=>{
+num.addEventListener("click", (event) => {
     event.preventDefault();
     location.reload()
 }
 )
-revenum.addEventListener("click",(event)=>{
+revenum.addEventListener("click", (event) => {
     event.preventDefault();
     pokemon.reverse(pokemon.num)
     mostrarlista()
