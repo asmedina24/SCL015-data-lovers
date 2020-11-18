@@ -24,6 +24,33 @@ body{
     font-weight: normal;
 
 }
+/* .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    opacity: 60%;
+    z-index: 500px;
+    display: none;
+  }
+  .loader.active {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    opacity: 60%;
+    z-index: 10000;
+    display: block;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
 header{
     display: flex;
     justify-content: space-between;
@@ -201,9 +228,12 @@ header{
     margin: 5px;
     line-height: 20px;
 }
+<<<<<<< HEAD
 #mostrar{
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
     margin: 40px;
 }
+=======
+>>>>>>> 55f2c5f45020e0ca62bde50a5f79911af364caa3
