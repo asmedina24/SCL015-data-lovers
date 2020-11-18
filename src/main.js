@@ -1,5 +1,6 @@
 import data from "./data/pokemon.js"
 import funciones from './data.js'
+
 let pokemon=data.pokemon;
 let pokelist=document.getElementById("content");
 const selectOrden=document.querySelector("#selectMenu");
@@ -8,7 +9,9 @@ const selectTypes=document.querySelector("#selectMenu2");
 const optionsTypes=document.querySelector("#opmenu2");
 const selectEggs=document.querySelector("#selectMenu3");
 const optionsEggs=document.querySelector("#opmenu3");
+const loader=document.querySelector(".loader");
 const AZ=document.getElementById("AZ")
+const ZA=document.getElementById("ZA")
 
 
 selectOrden.addEventListener("click",()=>{
@@ -30,11 +33,30 @@ function mostrarlista(){
 }
 
 AZ.addEventListener("click",(event)=>{
+    loader.classList.toggle("active");
     event.preventDefault();
     funciones.ordenarAZ(pokemon) 
     mostrarlista()
 }
 )
+ZA.addEventListener("click",(event)=>{
+    event.preventDefault();
+    funciones.ordenarZA(pokemon) 
+    mostrarlista()
+}
+)
 mostrarlista()
+
+
+// funciones.ordenarZA(pokemon);
+funciones.ordenarZA(pokemon)
+
+
+// ZA.addEventListener("click",(event)=>{
+//     event.preventDefault();
+//    funciones.ordenarZA(pokemon)
+//    mostrarlista()
+// }
+// )
 
 
