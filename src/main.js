@@ -33,7 +33,6 @@ function mostrarlista(){
 }
 
 AZ.addEventListener("click",(event)=>{
-    loader.classList.toggle("active");
     event.preventDefault();
     funciones.ordenarAZ(pokemon) 
     mostrarlista()
@@ -49,7 +48,7 @@ mostrarlista()
 
 
 // funciones.ordenarZA(pokemon);
-funciones.ordenarZA(pokemon)
+
 
 
 // ZA.addEventListener("click",(event)=>{
