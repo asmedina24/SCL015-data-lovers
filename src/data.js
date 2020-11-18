@@ -29,6 +29,8 @@ pokemon.sort(function(a, b) {
     return 0;
     });
 }
+
+}
 // ,
 // pruebaordenar:() => {
 //     let pokemon = data.pokemon;
@@ -43,7 +45,6 @@ pokemon.sort(function(a, b) {
 //         }
 //     }
 //     return pokemon;
-}
 
     // const newObj = {};
     // Object.keys(pokemon).forEach((x => {
