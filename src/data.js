@@ -27,7 +27,7 @@ pokemon.sort(function(a, b) {
     }
     return 0;
     });
-}
+},
 
 }
 // ,
