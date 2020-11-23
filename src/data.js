@@ -37,7 +37,7 @@ const funciones = {
     },
 
     filtrarInsecto: (pokemon) => {
-        const result = pokemon.filter( pokemon => pokemon.type == "bug");
+        const result = pokemon.filter( pokemon => pokemon.type == "electric");
         return result;
     }
 
