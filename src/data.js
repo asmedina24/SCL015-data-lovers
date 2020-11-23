@@ -30,15 +30,20 @@ const funciones = {
         return result;
     },
 
-    filtrarplanta: (pokemon) => {
+    filtrarAgua: (pokemon) => {
        //const pokemon = data.pokemon;
         //console.log(pokemon)
         const result = pokemon.filter( pokemon => pokemon.type == "water");
         //console.log(2, result,"water");
         //console.log(result);
         return result;
+    },
 
+    filtrarInsecto: (pokemon) => {
+        const result = pokemon.filter( pokemon => pokemon.type == "bug");
+        return result;
     }
+
 
 }
        

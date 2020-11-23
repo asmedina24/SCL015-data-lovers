@@ -35,7 +35,7 @@ describe('objeto', () => {
     });
 
     it('filtrar por tipo', () => {    //que solo filtre esa linea .only
-        expect(funciones.filtrarplanta(pokefi)).toEqual([{ name: "celeri", type: "water" }, { name: "asa", type: "water"}]);
+        expect(funciones.filtrarAgua(pokefi)).toEqual([{ name: "celeri", type: "water" }, { name: "asa", type: "water"}]);
     });
   });
 
