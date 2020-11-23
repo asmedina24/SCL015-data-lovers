@@ -4,23 +4,13 @@
 font-family: 'pokemon-solid';
 src: url('../font/pokemonsolid.ttf') format('truetype')
 }
-<<<<<<< HEAD
-
-/* pantalla mobile */
-@media screen and (max-width: 410px){
-=======
 @media (min-width:320px) and (max-width:425px){
->>>>>>> a2e55a2c2cae669a310980df3f0f591755aa476c
     *{
         margin: 0;
         padding: 0;
     }
     body{
-<<<<<<< HEAD
-        background: url("../img/fondo3.jpg");
-=======
         background-image: url(../img/fondo3.jpg) !important;
->>>>>>> a2e55a2c2cae669a310980df3f0f591755aa476c
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -110,16 +100,10 @@ src: url('../font/pokemonsolid.ttf') format('truetype')
     .contenedor1{
         width: 100%;
         height: auto;
-<<<<<<< HEAD
-        filter: drop-shadow(0px 5px 5px black);
-        padding-right: 40px;
-        margin-top: 300px;
-=======
         top: 0;
         left: 0;
         margin: 5px;
         position: relative;
->>>>>>> a2e55a2c2cae669a310980df3f0f591755aa476c
     }
     .contenedor2{
         width: 100%;
