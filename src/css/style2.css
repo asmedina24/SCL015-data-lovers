@@ -204,33 +204,15 @@ header{
 }
 .loader{
     background-color: white;
-    display: none;
     position: absolute;
     width: 100%;
-    min-width: 900px;
-    min-height: 780px;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
     z-index: 1000;
     opacity: 0.5;
-}
-.imgloader{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 50px;
-    
-
-}
-.gifloader{
-    width: 500px;
-    height: 500px;
-   
 }
 
-.imgloader {
-width: 300px;
-height: 300px;
-justify-content: center;
-align-items: center;
-margin-top: 20%;
-}

@@ -18,7 +18,7 @@ const AZ = document.getElementById("AZ")
 const ZA = document.getElementById("ZA")
 const num = document.getElementById("1-251")
 const revenum = document.getElementById("251-1")
-const planta = document.getElementById("planta")
+const agua = document.getElementById("agua")
 const insecto = document.getElementById("insecto")
 
 
@@ -76,28 +76,47 @@ revenum.addEventListener("click", (event) => {
 )
 mostrarlista()
 
-
-planta.addEventListener("click", (event) => {
+agua.addEventListener("click", (event) => {
     event.preventDefault();
     funciones.filtrarAgua(pokemon)
     //console.log(3,funciones.filtrarAgua(pokemon));
-    pokelist.innerHTML = ""
-    for (let i = 0; i < funciones.filtrarAgua(pokemon).length; ++i) {
-        //console.log(4,funciones.filtrarAgua(pokemon).length);
-        pokelist.innerHTML += (`<div class="pokelist">
-        <img class="pokeimg" src="${funciones.filtrarAgua(pokemon)[i].img}"/>
-        <p class="namepoke">${funciones.filtrarAgua(pokemon)[i].name}</p></div>`);
-    }
+    document.getElementById("opmenu2").classList.remove("active")
+    document.getElementById("loader").style.display = "block";
+    let tiempo = 1
+    setTimeout(function () {
+        pokelist.innerHTML = ""
+        for (let i = 0; i < funciones.filtrarAgua(pokemon).length; ++i) {
+            //console.log(4,funciones.filtrarAgua(pokemon).length);
+            pokelist.innerHTML += (`<div class="pokelist">
+            <img class="pokeimg" src="${funciones.filtrarAgua(pokemon)[i].img}"/>
+            <p class="namepoke">${funciones.filtrarAgua(pokemon)[i].name}</p></div>`);
+        }
+    }, tiempo);
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+    }, 1000);
+
 })
 
 
 insecto.addEventListener("click", (event) => {
     event.preventDefault();
     funciones.filtrarInsecto(pokemon)
-    pokelist.innerHTML = ""
-    for (let i = 0; i < funciones.filtrarInsecto(pokemon).length; ++i) {
-        pokelist.innerHTML += (`<div class="pokelist">
-        <img class="pokeimg" src="${funciones.filtrarInsecto(pokemon)[i].img}"/>
-        <p class="namepoke">${funciones.filtrarInsecto(pokemon)[i].name}</p></div>`);
-    }
+    document.getElementById("opmenu2").classList.remove("active")
+    document.getElementById("loader").style.display = "block";
+    let tiempo = 1
+    setTimeout(function () {
+        pokelist.innerHTML = ""
+        for (let i = 0; i < funciones.filtrarInsecto(pokemon).length; ++i) {
+            //console.log(4,funciones.filtrarAgua(pokemon).length);
+            pokelist.innerHTML += (`<div class="pokelist">
+            <img class="pokeimg" src="${funciones.filtrarInsecto(pokemon)[i].img}"/>
+            <p class="namepoke">${funciones.filtrarInsecto(pokemon)[i].name}</p></div>`);
+        }
+    }, tiempo);
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+    }, 1000);
+
+    // console.log(funciones.filtrarInsecto(pokemon))
 })

@@ -31,7 +31,7 @@ describe('objeto', () => {
 
   describe('filtrar', () => {
     it('se espera una funcion de filtrado', () => {
-      expect(typeof funciones.filtrarplanta).toBe('function');
+      expect(typeof funciones.filtrarAgua).toBe('function');
     });
 
     it('filtrar por tipo', () => {    //que solo filtre esa linea .only
