@@ -29,7 +29,13 @@ pokemon.sort(function(a, b) {
     return 0;
     });
 },
-
+prueba: ()=>{
+    let pokemon= data.pokemon;
+    let typegrass= pokemon.filter(function (pokemon){
+        return pokemon.type === "grass";
+    })
+    console.log(typegrass)
+}
 }
 // ,
 // pruebaordenar:() => {

@@ -81,7 +81,7 @@ revenum.addEventListener("click", (event) => {
 mostrarlista()
 
 
-
+funciones.prueba()
 
 
 // funciones.ordenarZA(pokemon);
