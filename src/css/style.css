@@ -78,12 +78,12 @@ body{
 }
 
 /* pantalla mobile */
-@media screen and (max-width: 411px){
+@media screen and (max-width: 410px){
     *{
         margin: 0px;
     }
     body{
-        background: url("img/fondo3.jpg");
+        background: url("../img/fondo3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -120,6 +120,7 @@ body{
         height: auto;
         filter: drop-shadow(0px 5px 5px black);
         padding-right: 40px;
+        margin-top: 300px;
     }
     .buttonsII{
         display: flex;

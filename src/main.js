@@ -18,6 +18,7 @@ const AZ = document.getElementById("AZ")
 const ZA = document.getElementById("ZA")
 const num = document.getElementById("1-251")
 const revenum = document.getElementById("251-1")
+const planta = document.getElementById("planta")
 
 
 selectOrden.addEventListener("click", () => {
@@ -41,16 +42,14 @@ function mostrarlista() {
             pokelist.innerHTML += (`<div class="pokelist">
         <img class="pokeimg" src="${pokemon[i].img}"/>
         <p class="namepoke">${pokemon[i].name}</p></div>`);
-        tiempo*=i
+            tiempo *= i
         }
-    },tiempo);
+    }, tiempo);
     setTimeout(function () {
         document.getElementById("loader").style.display = "none";
     }, 1000);
-    
+
 }
-
-
 AZ.addEventListener("click", (event) => {
     event.preventDefault()
     funciones.ordenarAZ(pokemon)
@@ -58,13 +57,9 @@ AZ.addEventListener("click", (event) => {
 }
 )
 ZA.addEventListener("click", (event) => {
-
     event.preventDefault();
-
     funciones.ordenarZA(pokemon)
     mostrarlista()
-
-
 }
 )
 num.addEventListener("click", (event) => {
@@ -81,18 +76,15 @@ revenum.addEventListener("click", (event) => {
 mostrarlista()
 
 
-
-
-
-// funciones.ordenarZA(pokemon);
-
-
-
-// ZA.addEventListener("click",(event)=>{
-//     event.preventDefault();
-//    funciones.ordenarZA(pokemon)
-//    mostrarlista()
-// }
-// )
-
-
+planta.addEventListener("click", (event) => {
+    event.preventDefault();
+    funciones.filtrarplanta(pokemon)
+    //console.log(3,funciones.filtrarplanta(pokemon));
+    pokelist.innerHTML = ""
+    for (let i = 0; i < funciones.filtrarplanta(pokemon).length; ++i) {
+        //console.log(4,funciones.filtrarplanta(pokemon).length);
+        pokelist.innerHTML += (`<div class="pokelist">
+        <img class="pokeimg" src="${funciones.filtrarplanta(pokemon)[i].img}"/>
+        <p class="namepoke">${funciones.filtrarplanta(pokemon)[i].name}</p></div>`);
+    }
+})
