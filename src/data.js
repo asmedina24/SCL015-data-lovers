@@ -1,6 +1,3 @@
-//import data from "./data/pokemon.js"
-
-
 const funciones = {
     ordenarAZ: (pokemon) => {
       const test = pokemon.sort(function (a, b) {

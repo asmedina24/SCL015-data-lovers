@@ -217,13 +217,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 100px;
+    top: 50px;
     
 
 }
 .gifloader{
     width: 500px;
     height: 500px;
+   
 }
 
 .imgloader {
