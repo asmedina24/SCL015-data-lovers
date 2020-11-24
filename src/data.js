@@ -27,7 +27,7 @@ const funciones = {
     },
 
     ordenarnum: (pokemon) => {
-        pokemon.sort((a, b)=> a.num - b.num)
+        pokemon.sort((a, b) => a.num - b.num)
     },
 
     revenum: (pokemon) => {
