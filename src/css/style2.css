@@ -45,14 +45,13 @@ header{
     margin-right: 80px;
 }
 #search1{
-    width: 228px;
+    width: 160px;
     height: 32px;
     filter: drop-shadow(0px 4px 4px black);
     background: rgba(219, 224, 238, 0.7);
     border: 1px solid #151313;
     box-sizing: border-box;
     border-radius: 10px;
-    
     font-family: 'pokemon-solid';
     font-size: medium;
     color: #FFCB05;
@@ -60,7 +59,7 @@ header{
  
 }
 ::-webkit-input-placeholder { 
-    color: red;
+    color: rgba(252, 69, 109, 0.836);
     text-shadow: 2px 2px 3px black;
 } 
 #lupa{
@@ -68,7 +67,7 @@ header{
     width: 32px;
     height: 25px;
     top: 10px;
-    right: 20px;
+    right: 90px;
 }
 .pokeball{
     flex-direction: row-reverse;
@@ -128,8 +127,7 @@ header{
     justify-content: center;
     flex-direction: column;
     display: none;
-    overflow: auto;
-    
+   
  }
  .option.active{
      display: block;
@@ -147,6 +145,7 @@ header{
      flex-direction: column;
      position: absolute;
      top: 40px;
+     overflow: auto;
  }
  .op{
     text-align: center;

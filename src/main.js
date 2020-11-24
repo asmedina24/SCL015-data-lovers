@@ -65,12 +65,13 @@ ZA.addEventListener("click", (event) => {
 )
 num.addEventListener("click", (event) => {
     event.preventDefault();
-    location.reload()
+    funciones.ordenarnum(pokemon)
+    mostrarlista()
 }
 )
 revenum.addEventListener("click", (event) => {
     event.preventDefault();
-    pokemon.reverse(pokemon.num)
+    funciones.revenum(pokemon)
     mostrarlista()
 }
 )
