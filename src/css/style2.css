@@ -211,7 +211,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-.gifloader{
-    top: 250px;
+.imgloader{
+    margin-top: 200px;
+
 }
 
