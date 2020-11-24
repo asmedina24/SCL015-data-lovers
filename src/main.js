@@ -98,7 +98,7 @@ agua.addEventListener("click", (event) => {
     event.preventDefault();
     let condition = (agua.getAttribute("id"));
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -122,7 +122,7 @@ fuego.addEventListener("click", (event) => {
     let condition = (fuego.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -145,7 +145,7 @@ insecto.addEventListener("click", (event) => {
     let condition = (insecto.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -169,7 +169,7 @@ electrico.addEventListener("click", (event) => {
     let condition = (electrico.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -192,7 +192,7 @@ hielo.addEventListener("click", (event) => {
     let condition = (hielo.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -215,7 +215,7 @@ normal.addEventListener("click", (event) => {
     let condition = (normal.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -238,7 +238,7 @@ planta.addEventListener("click", (event) => {
     let condition = (planta.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -261,7 +261,7 @@ lucha.addEventListener("click", (event) => {
     let condition = (lucha.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -284,7 +284,7 @@ veneno.addEventListener("click", (event) => {
     let condition = (veneno.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -330,7 +330,7 @@ volador.addEventListener("click", (event) => {
     let condition = (volador.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -354,7 +354,7 @@ psiquico.addEventListener("click", (event) => {
     let condition = (psiquico.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -377,7 +377,7 @@ roca.addEventListener("click", (event) => {
     let condition = (roca.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -400,7 +400,7 @@ fantasma.addEventListener("click", (event) => {
     let condition = (fantasma.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -423,7 +423,7 @@ dragon.addEventListener("click", (event) => {
     let condition = (dragon.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -446,7 +446,7 @@ siniestro.addEventListener("click", (event) => {
     let condition = (siniestro.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -469,7 +469,7 @@ acero.addEventListener("click", (event) => {
     let condition = (acero.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
@@ -492,7 +492,7 @@ hada.addEventListener("click", (event) => {
     let condition = (hada.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
     //console.log(condition)
     let result = funciones.filter(pokemon, condition) 
-    document.getElementById("opmenu").classList.remove("active")
+    document.getElementById("opmenu2").classList.remove("active")
     document.getElementById("loader").style.display = "block";
     let tiempo = 1
     setTimeout(function () {
