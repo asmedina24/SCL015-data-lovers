@@ -21,29 +21,19 @@ const funciones = {
            // if (a.name > b.name) {
              return -1
              //}
-        
         });
         //console.log(result)
         return result;
     },
 
-    filtrarAgua: (pokemon) => {
-       //const pokemon = data.pokemon;
-        //console.log(pokemon)
-        const result = pokemon.filter( pokemon => pokemon.type == "water");
-        //console.log(2, result,"water");
-        //console.log(result);
-        return result;
+    filter: (pokemon, condition ) => { // condicion sale de main js. 
+       //console.log(pokemon)
+       //console.log(condition)
+       const result = pokemon.filter( pokemon => pokemon.type.includes(condition));
+       return result;
     },
-
-    filtrarInsecto: (pokemon) => {
-        const result = pokemon.filter( pokemon => pokemon.type == "electric");
-        return result;
+    
     }
-
-
-}
-       
     export default funciones;  
 
 
