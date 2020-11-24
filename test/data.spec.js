@@ -1,7 +1,7 @@
 import funciones from '../src/data.js';
 
 
-const pokefi = [{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" }];
+const pokefi = [{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ];
 
 describe('objeto', () => {
   it('es un objeto', () => {
@@ -20,7 +20,7 @@ describe('objeto', () => {
 
   describe('ordenarZA', () => {    //describe la funcion
     it('se espera una funcion', () => {    // it lo que se espera como comentario 
-      expect(typeof funciones.ordenarZA).toBe('function'); // expect funcion como talñ funcion q traere de data
+      expect(typeof funciones.ordenarZA).toBe('function'); // expect funcion como tal funcion q traere de data
     });
 
     it('ordenar de za', () => {
@@ -31,11 +31,11 @@ describe('objeto', () => {
 
   describe('filtrar', () => {
     it('se espera una funcion de filtrado', () => {
-      expect(typeof funciones.filtrarAgua).toBe('function');
+      expect(typeof funciones.filter).toBe('function');
     });
 
-    it('filtrar por tipo', () => {    //que solo filtre esa linea .only
-        expect(funciones.filtrarAgua(pokefi)).toEqual([{ name: "celeri", type: "water" }, { name: "asa", type: "water"}]);
+    it('filtrar por tipo condicion', () => {    //que solo filtre esa linea .only
+        expect(funciones.filter(pokefi)).toEqual([]);
     });
   });
 
