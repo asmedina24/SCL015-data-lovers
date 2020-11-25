@@ -132,7 +132,7 @@ header{
     background: #31A9CE;
     border: 3px solid #F5ED02;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 15px;
     max-height: 300px;
     z-index: 100;
     width: 120%;
@@ -213,6 +213,27 @@ header{
 }
 .imgloader{
     margin-top: 200px;
-
 }
-
+.option.active::-webkit-scrollbar {
+    width: 8px;
+}
+.option.active::-webkit-scrollbar-thumb {
+    background: rgb(240, 203, 203);
+    border-radius: 4px;
+    
+}
+.option.active::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+.option.active::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.option.active::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+.option.active::-webkit-scrollbar-track:hover, 
+.option.active::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
