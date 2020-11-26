@@ -40,7 +40,7 @@ const funciones = {
        const result = pokemon.filter( pokemon => pokemon.type.includes(condition));
        return result;
     },
-    
+
     }
     export default funciones;  
 

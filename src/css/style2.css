@@ -187,8 +187,8 @@ header{
 }
 .pokeimg{
     width: 75px;
-    vertical-align: bottom;
     margin: 5px;
+    display: block;
 }
 .namepoke{
     text-align: center;
@@ -197,6 +197,7 @@ header{
     position: absolute;
     margin: 5px;
     line-height: 20px;
+    display: block;
 }
 .loader{
     background-color: white;
@@ -211,29 +212,81 @@ header{
     justify-content: center;
     align-items: center;
 }
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    z-index: 1072;
+    display: block;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+.close{
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    cursor: pointer;
+}
+.contenedor_modal{
+    width: 100%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    background-color: white;
+    opacity: 3 !important;
+    padding: 10px;
+    color: black;
+    font-family: monospace;
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.header_modal .close{
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
 .imgloader{
     margin-top: 200px;
 }
-.option.active::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
 }
-.option.active::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: rgb(240, 203, 203);
     border-radius: 4px;
     
 }
-.option.active::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:active {
     background-color: #999999;
 }
-.option.active::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #b3b3b3;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
-.option.active::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #e1e1e1;
     border-radius: 4px;
 }
-.option.active::-webkit-scrollbar-track:hover, 
-.option.active::-webkit-scrollbar-track:active {
+::-webkit-scrollbar-track:hover, 
+::-webkit-scrollbar-track:active {
   background: #d4d4d4;
+}
+.pokeballGira{
+    width: 75px;
+    vertical-align: bottom;
+    margin: 5px;
 }
