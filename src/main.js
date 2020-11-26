@@ -384,6 +384,7 @@ electrico.addEventListener("click", (event) => {
         setTimeout(function () {
             document.getElementById("loader").style.display = "none";
         }, 1000);
+
 })
 
 hielo.addEventListener("click", (event) => {
@@ -437,6 +438,30 @@ hielo.addEventListener("click", (event) => {
         setTimeout(function () {
             document.getElementById("loader").style.display = "none";
         }, 1000);
+
+})
+
+normal.addEventListener("click", (event) => {
+    event.preventDefault();
+    let condition = (normal.getAttribute("id")); // sacar atributo que hay en id y guardar en variable
+    //console.log(condition)
+    let result = funciones.filter(pokemon, condition)
+    document.getElementById("opmenu2").classList.remove("active")
+    document.getElementById("loader").style.display = "block";
+    let tiempo = 1
+    setTimeout(function () {
+        pokelist.innerHTML = ""
+        for (let i = 0; i < result.length; ++i) {
+            pokelist.innerHTML += (`<div class="pokelist">
+        <img class="pokeimg" src="${result[i].img}"/>
+        <p class="namepoke">${result[i].name}</p></div>`);
+            tiempo *= i
+        }
+    }, tiempo);
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+    }, 1000);
+
 })
 
 planta.addEventListener("click", (event) => {
