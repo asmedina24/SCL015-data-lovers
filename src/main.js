@@ -1,53 +1,6 @@
 import data from "./data/pokemon.js"
 import funciones from './data.js'
 
-
-
-var modal = document.getElementById("myModal"); // toma id de html 
-
-
-var btn = document.getElementById("myBtn");   // Get the button that opens the modal
-// When the user clicks the button, open the modal 
-const cambioCondenidoModal = document.getElementById("contenidomodal");
-btn.onclick = function() {
-    console.log(1, data)
-    for (let i = 0; i < pokemon.length; ++i){
-        cambioCondenidoModal.innerHTML = (`<div>
-        <img src="${pokemon[i].img}"/>
-        <p class="namepoke">${pokemon[i].name}</p></div>`);
-               }
-  modal.style.display = "block";
-}
-
-const pokemodal = function (Modalunitario) {
-    pokelist.innerHTML = ""
-    cambioCondenidoModal.innerHTML = (`<div>
-    <img src="${Modalunitario.img}"/>
-    <p class="namepoke">${Modalunitario.name}</p></div>`);
-
-
-} 
-
-
-
-
-
-
-
-// Get the <span> element that closes the modal
-var spanCierre = document.getElementsByClassName("close")[0];
-// When the user clicks on <span> (x), close the modal
-spanCierre.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-/*window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}*/
-
 let pokemon = data.pokemon;
 let pokelist = document.getElementById("content");
 // let modal=document.getElementById("modal")
@@ -89,43 +42,6 @@ selectTypes.addEventListener("click", () => {
 selectEggs.addEventListener("click", () => {
     optionsEggs.classList.toggle("active");
 })
-
-/*const cambioCondenidoModal = document.getElementById("contenidomodal");
-const printModal = () => {
-    
-    console.log(1, data)
-     for (let i = 0; i < pokemon.length; ++i){
-        cambioCondenidoModal.innerHTML = (`<div>
-        <img src="${pokemon[i].img}"/>
-        <p class="namepoke">${pokemon[i].name}</p></div>`);
-               }
-
-        console.log(2, printModal);
-    }
-          printModal()*/
-
-          /*const modal = document.createElement('div');
-          modal.classList.add('modal');
-          document.getElementById('contentOfCards').appendChild(modal);
-
-          const modalContent = document.createElement('div');
-          modalContent.classList.add('modal-content');
-          modalContent.innerHTML = `<div class='imgType'>${weaknesses(dataArr[i].type)}</div>
-                                   <div class='pokemon-description'> 
-                                   <h5>${dataArr[i].name}</h5>
-                                   <img class='modal-img' src='${dataArr[i].img}'>
-                                   <p><span class='modal-p'>Height: </span>${dataArr[i].height}</p>
-                                   <p><span class='modal-p'>Weight: </span>${dataArr[i].weight}</p>
-                                   <p><span class='modal-p'>Candy Count: </span>${dataArr[i].candy_count}</p>
-                                   <p><span class='modal-p'>Egg: </span>${dataArr[i].egg}</p>
-                                   <p><span class='modal-p'>Avg Spawns: </span>${dataArr[i].avg_spawns}</p>
-                                   <p><span class='modal-p'>Time: </span>${dataArr[i].spawn_time}</p>
-                                   <p><span class='resistant-p'>Weaknesses: </span></p> 
-                                   <div class='resistant'>${weaknesses(dataArr[i].weaknesses)}</div> 
-                                   </div>`;
-          modal.appendChild(modalContent);*/
-
-    
 
 function mostrarlista() {
     document.getElementById("opmenu").classList.remove("active")
