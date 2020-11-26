@@ -50,6 +50,21 @@ function mostrarlista() {
     setTimeout(function () {
         pokelist.innerHTML = ""
         for (let i = 0; i < pokemon.length; ++i) {
+            let evolucion = 'no informada'
+            if (pokemon[i].evolution.hasOwnProperty("next-evolution")){
+                evolucion = pokemon[i].evolution["next-evolution"]
+            }
+            if (pokemon[i].evolution.hasOwnProperty("prev-evolution")){
+                evolucion = pokemon[i].evolution["prev-evolution"]
+            }
+            if (evolucion!='no informada') {
+                for (let index = 0; index < evolucion.length; index++) {
+                    console.log(evolucion[index])
+                    
+                }
+            }
+            
+            console.log(evolucion)
             pokelist.innerHTML += (`<div id="${pokemon[i].num}"class="pokelist">
             <img class="pokeimg" src="${pokemon[i].img}"/>
             <p class="namepoke">${pokemon[i].name}</p></div>
@@ -62,14 +77,15 @@ function mostrarlista() {
                         <div><img class="pokeimg" src="${pokemon[i].img}"/></div>
                         <div><strong>Nombre:</strong><span>${pokemon[i].name}</span></div>
                         <div><strong>Numero:</strong><span>${pokemon[i].num}</span></div>
+                        <div><strong>Generacion:</strong><span>${pokemon[i].generation.name}</span></div>
+                        <div><strong></strong><span>${pokemon[i].about}</span></div>
+                        <div><strong>Debilidad:</strong><span>${pokemon[i].weaknesses}</span></div>
+                        <div><strong>Evolucion:</strong><span>${evolucion}</span></div>
                     </div>
                 </div>
             </div>`);
             tiempo *= i
-            pokelist.addEventListener ("click" , function() {
-                pokemodal(pokemon[i]);
-                cambioCondenidoModal.style.display= "block";
-            })
+           
         }
        let elements = document.getElementsByClassName("pokelist");
         for (let i = 0; i < elements.length; i++) {
@@ -153,10 +169,38 @@ agua.addEventListener("click", (event) => {
     setTimeout(function () {
         pokelist.innerHTML = ""
         for (let i = 0; i < result.length; ++i) {
-            pokelist.innerHTML += (`<div class="pokelist">
+            pokelist.innerHTML += (`<div id="${result[i].num}" class="pokelist">
         <img class="pokeimg" src="${result[i].img}"/>
-        <p class="namepoke">${result[i].name}</p></div>`);
+        <p class="namepoke">${result[i].name}</p></div><div id="modal_${result[i].num}" style="display:none;" class="modal">
+        <div class="contenedor_modal">
+            <div class="header_modal">
+                <button type="button" class="close">X</button>
+            </div>
+            <div class="cuerpo_modal">
+                <div><img class="pokeimg" src="${result[i].img}"/></div>
+                <div><strong>Nombre:</strong><span>${result[i].name}</span></div>
+                <div><strong>Numero:</strong><span>${result[i].num}</span></div>
+            </div>
+        </div>
+    </div>`);
+               
             tiempo *= i
+        }
+        let elements = document.getElementsByClassName("pokelist");
+        for (let i = 0; i < elements.length; i++) {
+            let elemento = elements[i]
+            elemento.addEventListener('click', function () {
+                document.getElementById('modal_' + elemento.id).style.display = "flex";
+            },
+            false);
+        }
+        let modales = document.getElementsByClassName("close");
+        for (let x = 0; x < modales.length; x++) {
+            let elemento = modales[x]
+            elemento.addEventListener('click', function () {
+                elemento.closest('.modal').style.display = "none";
+            },
+            false);
         }
     }, tiempo);
     setTimeout(function () {
@@ -177,10 +221,38 @@ fuego.addEventListener("click", (event) => {
     setTimeout(function () {
         pokelist.innerHTML = ""
         for (let i = 0; i < result.length; ++i) {
-            pokelist.innerHTML += (`<div class="pokelist">
+            pokelist.innerHTML += (`<div id="${result[i].num}" class="pokelist">
         <img class="pokeimg" src="${result[i].img}"/>
-        <p class="namepoke">${result[i].name}</p></div>`);
+        <p class="namepoke">${result[i].name}</p></div><div id="modal_${result[i].num}" style="display:none;" class="modal">
+        <div class="contenedor_modal">
+            <div class="header_modal">
+                <button type="button" class="close">X</button>
+            </div>
+            <div class="cuerpo_modal">
+                <div><img class="pokeimg" src="${result[i].img}"/></div>
+                <div><strong>Nombre:</strong><span>${result[i].name}</span></div>
+                <div><strong>Numero:</strong><span>${result[i].num}</span></div>
+            </div>
+        </div>
+    </div>`);
+               
             tiempo *= i
+        }
+        let elements = document.getElementsByClassName("pokelist");
+        for (let i = 0; i < elements.length; i++) {
+            let elemento = elements[i]
+            elemento.addEventListener('click', function () {
+                document.getElementById('modal_' + elemento.id).style.display = "flex";
+            },
+            false);
+        }
+        let modales = document.getElementsByClassName("close");
+        for (let x = 0; x < modales.length; x++) {
+            let elemento = modales[x]
+            elemento.addEventListener('click', function () {
+                elemento.closest('.modal').style.display = "none";
+            },
+            false);
         }
     }, tiempo);
     setTimeout(function () {
@@ -200,10 +272,38 @@ insecto.addEventListener("click", (event) => {
     setTimeout(function () {
         pokelist.innerHTML = ""
         for (let i = 0; i < result.length; ++i) {
-            pokelist.innerHTML += (`<div class="pokelist">
+        pokelist.innerHTML += (`<div id="${result[i].num}" class="pokelist">
         <img class="pokeimg" src="${result[i].img}"/>
-        <p class="namepoke">${result[i].name}</p></div>`);
+        <p class="namepoke">${result[i].name}</p></div><div id="modal_${result[i].num}" style="display:none;" class="modal">
+        <div class="contenedor_modal">
+            <div class="header_modal">
+                <button type="button" class="close">X</button>
+            </div>
+            <div class="cuerpo_modal">
+                <div><img class="pokeimg" src="${result[i].img}"/></div>
+                <div><strong>Nombre:</strong><span>${result[i].name}</span></div>
+                <div><strong>Numero:</strong><span>${result[i].num}</span></div>
+            </div>
+        </div>
+    </div>`);
+               
             tiempo *= i
+        }
+        let elements = document.getElementsByClassName("pokelist");
+        for (let i = 0; i < elements.length; i++) {
+            let elemento = elements[i]
+            elemento.addEventListener('click', function () {
+                document.getElementById('modal_' + elemento.id).style.display = "flex";
+            },
+            false);
+        }
+        let modales = document.getElementsByClassName("close");
+        for (let x = 0; x < modales.length; x++) {
+            let elemento = modales[x]
+            elemento.addEventListener('click', function () {
+                elemento.closest('.modal').style.display = "none";
+            },
+            false);
         }
     }, tiempo);
     setTimeout(function () {
@@ -556,11 +656,6 @@ hada.addEventListener("click", (event) => {
     setTimeout(function () {
         document.getElementById("loader").style.display = "none";
     }, 1000);
-<<<<<<< HEAD
-   
-})
-
-=======
 
 })
 
@@ -569,4 +664,3 @@ hada.addEventListener("click", (event) => {
     //Añades un evento a cada elemento
 
 
->>>>>>> bcaff650b1a4381a885e717a7ab687fd9a5145d4
