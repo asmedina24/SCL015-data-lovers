@@ -225,6 +225,8 @@ header{
     z-index: 1072;
     display: block;
     background-color: rgba(0,0,0,0.5) !important;
+    justify-content: center;
+    align-items: center;
 }
 .close{
     float: right;
