@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokeSearch - Pokedex</title>
-  <link rel="stylesheet" href="./css/style2.css"/>
-  <link rel="stylesheet" href="./css/style3.css"/>
-  </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeSearch - Pokedex</title>
+    <link rel="stylesheet" href="./css/style2.css" />
+</head>
+
 <body>
     
- 
-    <button id="myBtn">Open Modal</button>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content" id="contenidomodal">
-        <span class="close">&times;</span>
-        
-      </div>
-    
-    </div>
- 
     
     
        <div class="loader" id="loader">
@@ -30,123 +17,124 @@
             <img class="gifloader" src="img/pokemon.gif" alt="">
         </center>
     </div>
- <!-- <div class="loader"> </div>   -->
-<header class="header">
-    <img id="logo2" src="img/Logo1.png" alt="Logo2">
-    <div id="search">
-      <input type="search" id="search1" placeholder="Buscar">
-    <img src="img/lupa.png" id="lupa" alt="">
+    <!-- <div class="loader"> </div>   -->
+    <header class="header">
+        <img id="logo2" src="img/Logo1.png" alt="Logo2">
+        <div id="search">
+            <input type="search" id="search1" placeholder="Buscar">
+            <img src="img/lupa.png" id="lupa" alt="">
+        </div>
+    </header>
+    <div class="pokeball"><a href="index.html"><img src="img/pokebola.png" alt="pokebola" class="pokeball1"></a></div>
+    <div class="nav">
+        <form action="">
+            <div class="menubox">
+                <div class="selectMenu" id="selectMenu">
+                    <p class="titleMenu">Orden</p>
+                </div>
+                <div class="option" id="opmenu">
+                    <a href="javascript" id="1-251" class="options">
+                        <h1 class="op">1 - 251</h1>
+                    </a>
+                    <a href="javascript" id="251-1" class="options">
+                        <h1 class="op">251 - 1</h1>
+                    </a>
+                    <a href="javascript" id="AZ" class="options">
+                        <h1 class="op">A - Z</h1>
+                    </a>
+                    <a href="javascript" id="ZA" class="options">
+                        <h1 class="op">Z - A</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="menubox">
+                <div class="selectMenu" id="selectMenu2">
+                    <p class="titleMenu">Tipos</p>
+                </div>
+                <div class="option" id="opmenu2">
+                    <a href="javascript" class="options" id="water">
+                        <h1 class="op">Agua</h1>
+                    </a>
+                    <a href="javascript" class="options" id="bug">
+                        <h1 class="op">Insecto</h1>
+                    </a>
+                    <a href="javascript" class="options" id="fire">
+                        <h1 class="op">Fuego</h1>
+                    </a>
+                    <a href="javascript" class="options" id="electric">
+                        <h1 class="op">Electrico</h1>
+                    </a>
+                    <a href="javascript" class="options" id="ice">
+                        <h1 class="op">Hielo</h1>
+                    </a>
+                    <a href="javascript" class="options" id="normal">
+                        <h1 class="op">Normal</h1>
+                    </a>
+                    <a href="javascript" class="options" id="grass">
+                        <h1 class="op">Planta</h1>
+                    </a>
+                    <a href="javascript" class="options" id="fighting">
+                        <h1 class="op">Lucha</h1>
+                    </a>
+                    <a href="javascript" class="options" id="poison">
+                        <h1 class="op">Veneno</h1>
+                    </a>
+                    <a href="javascript" class="options" id="ground">
+                        <h1 class="op">Tierra</h1>
+                    </a>
+                    <a href="javascript" class="options" id="flying">
+                        <h1 class="op">Volador</h1>
+                    </a>
+                    <a href="javascript" class="options" id="psychic">
+                        <h1 class="op">Psiquico</h1>
+                    </a>
+                    <a href="javascript" class="options" id="rock">
+                        <h1 class="op">Roca</h1>
+                    </a>
+                    <a href="javascript" class="options" id="ghost">
+                        <h1 class="op">Fantasma</h1>
+                    </a>
+                    <a href="javascript" class="options" id="dragon">
+                        <h1 class="op">Dragon</h1>
+                    </a>
+                    <a href="javascript" class="options" id="dark">
+                        <h1 class="op">Siniestro</h1>
+                    </a>
+                    <a href="javascript" class="options" id="steel">
+                        <h1 class="op">Acero</h1>
+                    </a>
+                    <a href="javascript" class="options" id="fairy">
+                        <h1 class="op">Hada</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="menubox">
+                <div class="selectMenu" id="selectMenu3">
+                    <p class="titleMenu">Huevos</p>
+                </div>
+                <div class="option" id="opmenu3">
+                    <a href="" class="options">
+                        <h1 class="op">2 KM</h1>
+                    </a>
+                    <a href="" class="options">
+                        <h1 class="op">5 KM</h1>
+                    </a>
+                    <a href="" class="options">
+                        <h1 class="op">7 KM</h1>
+                    </a>
+                    <a href="" class="options">
+                        <h1 class="op">10 KM</h1>
+                    </a>
+                </div>
+            </div>
+        </form>
     </div>
-</header>
-<div class="pokeball"><a href="index.html"><img src="img/pokebola.png" alt="pokebola" class="pokeball1"></a></div>
-<div class="nav">
-    <form action="">
-        <div class="menubox">
-        <div class="selectMenu" id="selectMenu">
-                 <p class="titleMenu">Orden</p>
-             </div>
-             <div class="option" id="opmenu">
-                <a href="javascript" id="1-251" class="options">
-                    <h1 class="op">1 - 251</h1>
-                </a>
-                <a href="javascript" id="251-1"  class="options">
-                    <h1 class="op">251 - 1</h1>
-                </a>
-                 <a href="javascript" id="AZ"  class="options">
-                     <h1 class="op">A - Z</h1>
-                 </a>
-                <a href="javascript" id="ZA" class="options">
-                    <h1 class="op">Z - A</h1>
-                </a>
-            </div>
-        </div>
-        <div class="menubox">    
-            <div class="selectMenu" id="selectMenu2">
-                <p class="titleMenu">Tipos</p>
-            </div>
-            <div class="option" id="opmenu2">
-                <a href="javascript" class="options" id="water">
-                    <h1 class="op">Agua</h1>
-                </a>
-               <a href="javascript" class="options"  id="bug">
-                   <h1 class="op">Insecto</h1>
-               </a>
-               <a href="javascript" class="options" id="fire">
-                <h1 class="op">Fuego</h1>
-            </a>
-            <a href="javascript" class="options" id="electric">
-                <h1 class="op">Electrico</h1>
-            </a>
-            <a href="javascript" class="options" id="ice">
-                <h1 class="op">Hielo</h1>
-            </a>
-            <a href="javascript" class="options" id="normal">
-                <h1 class="op">Normal</h1>
-            </a>
-            <a href="javascript" class="options" id="grass">
-                <h1 class="op">Planta</h1>
-            </a> 
-            <a href="javascript" class="options" id="fighting">
-                <h1 class="op">Lucha</h1>
-            </a> 
-            <a href="javascript" class="options" id="poison">
-                <h1 class="op">Veneno</h1>
-            </a>
-            <a href="javascript" class="options" id="ground">
-                <h1 class="op">Tierra</h1>
-            </a>
-            <a href="javascript" class="options" id="flying">
-                <h1 class="op">Volador</h1>
-            </a>
-            <a href="javascript" class="options" id="psychic">
-                <h1 class="op">Psiquico</h1>
-            </a>
-            <a href="javascript" class="options" id="rock">
-                <h1 class="op">Roca</h1>
-            </a>
-            <a href="javascript" class="options" id="ghost">
-                <h1 class="op">Fantasma</h1>
-            </a>
-            <a href="javascript" class="options" id="dragon">
-                <h1 class="op">Dragon</h1>
-            </a>
-            <a href="javascript" class="options" id="dark">
-                <h1 class="op">Siniestro</h1>
-            </a>
-            <a href="javascript" class="options" id="steel">
-                <h1 class="op">Acero</h1>
-            </a>
-            <a href="javascript" class="options" id="fairy">
-                <h1 class="op">Hada</h1>
-            </a>
-           </div>
-        </div>
-        <div class="menubox">    
-            <div class="selectMenu" id="selectMenu3">
-                <p class="titleMenu">Huevos</p>
-            </div>
-            <div class="option" id="opmenu3">
-                <a href="" class="options">
-                    <h1 class="op">2 KM</h1>
-                </a>
-               <a href="" class="options">
-                   <h1 class="op">5 KM</h1>
-               </a>
-               <a href="" class="options">
-                <h1 class="op">7 KM</h1>
-            </a>
-            <a href="" class="options">
-                <h1 class="op">10 KM</h1>
-            </a>
-           </div>
-        </div>
-    </form>
-</div>
-<div id="content"></div>
-<footer id="footer" class="footer">Todos los derechos reservados para Data lovers &#60;L &#62;</footer>
-<script src="main.js" type="module" ></script>
-<script src="data.js" type="module" ></script>
-<!-- type="module" -->
+    <div id="content" class="content"></div>
+    <footer id="footer" class="footer"> &#174; Alejandra Medina y Caroline Jeldres &#60; L &#62;</footer>
+    <script src="main.js" type="module"></script>
+    <script src="data.js" type="module"></script>
+    <!-- type="module" -->
 
 </body>
+
 </html>
