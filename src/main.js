@@ -56,7 +56,7 @@ function prev_next(prev_dev){
     // eslint-disable-next-line no-prototype-builtins
     if (prev_dev.hasOwnProperty("prev-evolution")){
         let evolucion = prev_dev["prev-evolution"]
-        pre_next+='<div><strong>Pre-evolución:</strong><span>'
+        pre_next+='<div class=modaldatos><strong>Pre-evolución:</strong><span>'
         for (let index = 0; index < evolucion.length; index++) {
             pre_next += evolucion[index].name
         }
@@ -82,13 +82,14 @@ function mostrarlista() {
                         <button type="button" class="close">X</button>
                     </div>
                     <div class="cuerpo_modal">
-                        <div><img class="pokeimg" src="${pokemon[i].img}"/></div>
-                        <div><strong>Nombre:</strong><span>${pokemon[i].name}</span></div>
-                        <div><strong>Numero:</strong><span>${pokemon[i].num}</span></div>
-                        <div><strong>Generacion:</strong><span>${pokemon[i].generation.name}</span></div>
-                        <div><strong></strong><span>${pokemon[i].about}</span></div>
-                        <div><strong>Debilidad:</strong><span>${pokemon[i].weaknesses}</span></div>
-                        ${prev_next(pokemon[i].evolution)}
+                        <div class=modaldatos>
+                        <img class="modalimg" src="${pokemon[i].img}"/>
+                        <strong>Nombre:</strong><span>${pokemon[i].name}</span>
+                        <strong>Numero:</strong><span>${pokemon[i].num}</span>
+                        <strong>Generacion:</strong><span>${pokemon[i].generation.name}</span>
+                        <strong>Debilidad:</strong><span>${pokemon[i].weaknesses}</span></div>
+                        <div class=modalabout><strong></strong><span>${pokemon[i].about}</span></div>
+                         ${prev_next(pokemon[i].evolution)}
                     </div>
                 </div>
             </div>`);
@@ -407,12 +408,12 @@ hielo.addEventListener("click", (event) => {
                         <button type="button" class="close">X</button>
                     </div>
                     <div class="cuerpo_modal">
-                    <div><img class="pokeimg" src="${result[i].img}"/></div>
-                        <div><strong>Nombre:</strong><span>${result[i].name}</span></div>
-                        <div><strong>Numero:</strong><span>${result[i].num}</span></div>
-                        <div><strong>Generacion:</strong><span>${result[i].generation.name}</span></div>
-                        <div><strong></strong><span>${result[i].about}</span></div>
-                        <div><strong>Debilidad:</strong><span>${result[i].weaknesses}</span></div>
+                    <div><img class="modalimg" src="${result[i].img}"/></div>
+                        <div class=modaldatos><strong>Nombre:</strong><span>${result[i].name}</span></div>
+                        <div class=modaldatos><strong>Numero:</strong><span>${result[i].num}</span></div>
+                        <div class=modaldatos><strong>Generacion:</strong><span>${result[i].generation.name}</span></div>
+                        <div class=modaldatos><strong></strong><span>${result[i].about}</span></div>
+                        <div class=modaldatos><strong>Debilidad:</strong><span>${result[i].weaknesses}</span></div>
                         ${prev_next(result[i].evolution)}
                     </div>
                 </div>
@@ -744,5 +745,4 @@ hada.addEventListener("click", (event) => {
 
 
     //Añades un evento a cada elemento
-
 

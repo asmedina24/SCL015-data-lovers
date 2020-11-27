@@ -14,9 +14,9 @@ const funciones = {
 
     ordenarZA: (pokemon) => {
         //let pokemon = data.pokemon;
-        const result = pokemon.sort(function (a, b) {
+        const result = pokemon.na.sort(function (a, b) {
             if (a.name < b.name) {
-                return 1;
+                // return 1;
             }
            // if (a.name > b.name) {
              return -1

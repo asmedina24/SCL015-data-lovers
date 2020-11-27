@@ -228,23 +228,17 @@ header{
     justify-content: center;
     align-items: center;
 }
-.close{
-    float: right;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: .5;
-    cursor: pointer;
-}
+
 .contenedor_modal{
     width: 100%;
     margin-left: 30%;
     margin-top: 10%;
     margin-right: 30%;
     margin-bottom: 20%;
-    background-color: white;
+    background: #31A9CE;
+    border: 3px solid #F5ED02;
+    box-sizing: border-box;
+    border-radius: 20px;
     opacity: 3 !important;
     padding: 10px;
     color: black;
@@ -252,11 +246,18 @@ header{
 }
 
 button.close {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-appearance: none;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: red;
+    font-family: 'pokemon-solid';
+    text-shadow: 4px 0 #fff;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
+
 .header_modal .close{
     padding: 1rem;
     margin: -1rem -1rem -1rem auto;
@@ -291,4 +292,20 @@ button.close {
     width: 75px;
     vertical-align: bottom;
     margin: 5px;
+}
+.modalimg{
+    width: 300px;
+}
+.modaldatos{
+    font-family: cursive;
+    font-size: large;
+     color: white;
+}
+.modelabout{
+    font-family: cursive;
+    font-size: large;
+    color: white;
+    border-bottom-color: yellow;
+    position: relative;
+    display: flex;
 }
