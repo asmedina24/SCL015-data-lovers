@@ -16,7 +16,7 @@ const funciones = {
         //let pokemon = data.pokemon;
         const result = pokemon.sort(function (a, b) {
             if (a.name < b.name) {
-                return 1;
+               // return 1;
             }
            // if (a.name > b.name) {
              return -1
@@ -28,10 +28,12 @@ const funciones = {
 
     ordenarnum: (pokemon) => {
         pokemon.sort((a, b) => a.num - b.num)
+       
     },
 
     revenum: (pokemon) => {
        pokemon.sort((a, b) => b.num - a.num)
+       
     },
 
     filter: (pokemon, condition ) => { // condicion sale de main js. 
