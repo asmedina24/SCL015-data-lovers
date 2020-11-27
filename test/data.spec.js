@@ -2,7 +2,7 @@ import funciones from '../src/data.js';
 
 
 const pokefi = [{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ];
-const ordennume = [{ name: "celeri", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" }, { name: "pikachu", type: "poison", num: "0111" } ];
+//const ordennume = [{ name: "celeri", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" }, { name: "pikachu", type: "poison", num: "0111" } ];
 
 
 describe('objeto', () => {
@@ -46,7 +46,7 @@ describe('objeto', () => {
 
     });
     
-    it('ordenar de num 1 a 251', () => {
+    /*it('ordenar de num 1 a 251', () => {
         expect(funciones.ordenarnum(ordennume)).toEqual([{ name: "asa", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" } ]); // expect lo que recibe y tobe es lo que se espera
       });
 
@@ -55,8 +55,6 @@ describe('objeto', () => {
       });*/
         
     }); 
-
-
 
   describe('filtrar', () => {
     it('se espera una funcion de filtrado', () => {
@@ -68,5 +66,10 @@ describe('objeto', () => {
     });
   });
 
+  describe('filtrarhuevos', () => {
+    it('se espera una funcion de filtrado huevos', () => {
+      expect(typeof funciones.filterEgg).toBe('function');
+    });
+  });
 
 

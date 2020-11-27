@@ -73,9 +73,9 @@ header{
     display: flex;
     justify-content: flex-start
 }
-.pokeball1{
+.pokeball1 {
     width: 40px;
-    margin-right: 120px;
+    margin-right: 70px;
 }
 .nav{
     max-width: 1000px;
@@ -316,3 +316,642 @@ margin: 3%;
 }
 
 
+/*Tamaño table*/
+@media (min-width:426px) and (max-width:768px) and (orientation: portrait){
+
+@font-face {
+    font-family: 'pokemon-solid';
+    src: url('../font/pokemonsolid.ttf') format('truetype')
+}
+
+*{
+    margin: 0px;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    -webkit-text-fill-color: #FFCB05;
+}
+body{
+    background: url("../img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    font-family: 'pokemon-solid';
+    font-style: normal;
+    font-weight: normal;
+}
+ 
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+#logo2{
+    width: 180px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px black);
+
+}
+#search{
+    width: 240px;
+    height: 47px;
+    filter: drop-shadow(0px 4px 4px black);
+    margin-top: 50px;
+    margin-right: 200px;
+}
+#search1{
+    width: 140px;
+    height: 32px;
+    filter: drop-shadow(0px 4px 4px black);
+    background: rgba(219, 224, 238, 0.7);
+    border: 1px solid #151313;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'pokemon-solid';
+    font-size: medium;
+    color: #FFCB05;
+    letter-spacing: 2.5pt;
+}
+::-webkit-input-placeholder { 
+    color: rgba(252, 69, 109, 0.836);
+    text-shadow: 2px 2px 3px black;
+} 
+#lupa{
+    position: absolute;
+    width: 32px;
+    height: 25px;
+    top: 10px;
+    right: 90px;
+}
+.pokeball{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-top: -450%;
+}
+
+.pokeball1{
+    margin-right: -850;
+}
+
+.nav{
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0px;
+    margin-top: -100px;
+    text-align: center;
+ }
+ .menubox{
+    width: 100px;
+    margin-right: 30px;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+
+ }
+ .selectMenu{
+    background: #31A9CE;
+    border: 3px solid #F5ED02;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+    width: 120%;
+ }
+ .titleMenu{
+    text-align: center;
+    font-size: smaller;
+    -webkit-text-fill-color: #FFCB05;
+    letter-spacing: 2.5pt;
+    text-shadow: 2px 2px 3px black;
+ }
+ .option{
+    background: #31A9CE;
+    border: 3px solid #F5ED02;
+    box-sizing: border-box;
+    border-radius: 20px;
+    max-height: 114px;
+    z-index: 100;
+    width: 119px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+ }
+
+ .option.active{
+    display: block;
+    margin-top: 4%;
+    background: #31A9CE;
+    border: 3px solid #F5ED02;
+    box-sizing: border-box;
+    border-radius: 15px;
+    max-height: 300px;
+    z-index: 100;
+    width: 120%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+ }
+ .op{
+    text-align: center;
+    font-size: smaller;
+    letter-spacing: 2.5pt;
+    text-shadow: 2px 2px 3px black;
+    border-bottom: 2px solid #F5ED02;
+
+ }
+ .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    font-family: 'pokemon-solid';
+    font-style: normal;
+    font-weight: normal;
+    font-size: x-small;
+    text-align: center;
+    color: white;
+    letter-spacing: 2.5pt;
+    text-shadow: 1px 1px 2px black;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    margin: 40px;
+}
+.pokelist{
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    text-transform: capitalize;
+    font-size: smaller;
+    align-self: flex-end;
+    margin: 30px;
+    background: rgba(60, 59, 43, 0.6);
+    border-radius: 20px;
+}
+.pokeimg{
+    width: 75px;
+    margin: 5px;
+    display: block;
+}
+.namepoke{
+    text-align: center;
+    text-rendering: optimizespeed;
+    width: 85px;
+    position: absolute;
+    margin: 5px;
+    line-height: 20px;
+    display: block;
+}
+.loader{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
+    z-index: 1000;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgloader{
+    margin-top: 200px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(240, 203, 203);
+    border-radius: 4px;
+    
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track:hover, 
+::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+.pokeballGira{
+    width: 75px;
+    vertical-align: bottom;
+    margin: 5px;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    z-index: 1072;
+    display: flex;
+    background-color: rgba(0,0,0,0.5) !important;
+    justify-content: center;
+    align-items: center;
+}
+.close{
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    color: red;
+    width: 70px;
+    z-index: 4000;
+    
+    font-family: 'pokemon-solid';
+    text-shadow: 3px 3px 3px white;
+}
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.header_modal .close{
+    margin: -1rem -1rem -1rem auto;
+}
+
+.contenedor_modal {
+    width: 100%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    background: rgba(29, 44, 94, 0.97);
+    border: 3px solid #F5ED02;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    color: white ;
+    font-family: monospace;
+    text-align: center;
+}
+
+.modalimg  {
+    z-index: 1000;
+    width: 100%;
+    max-width: 300px;
+
+ }
+
+.letrasdentromodal {
+margin: 3%;
+}
+
+.cuerpo_modal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+}
+
+
+/*pantalla movil*/
+@media (min-width:320px) and (max-width:425px){
+        
+*{
+      margin: 0px;
+}
+    a:link, a:visited, a:active {
+        text-decoration:none;
+        -webkit-text-fill-color: #FFCB05;
+    }
+    body{
+        background: url("../img/fondo2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        width: 100%;
+        font-family: 'pokemon-solid';
+        font-style: normal;
+        font-weight: normal;
+    }
+     
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+    
+    #logo2{
+        width: 140px;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px black);
+    
+    }
+    #search{
+        width: 140px;
+        height: 27px;
+        filter: drop-shadow(0px 4px 4px black);
+        margin-top: 50px;
+        margin-right: 8px;
+    }
+    #search1{
+        width: 110px;
+        height: 32px;
+        filter: drop-shadow(0px 4px 4px black);
+        background: rgba(219, 224, 238, 0.7);
+        border: 1px solid #151313;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: 'pokemon-solid';
+        font-size: medium;
+        color: #FFCB05;
+        letter-spacing: 2.0pt;
+     
+    }
+    ::-webkit-input-placeholder { 
+        color: rgba(252, 69, 109, 0.836);
+        text-shadow: 2px 2px 3px black;
+    } 
+    #lupa{
+        position: absolute;
+        width: 20px;
+        height: 15px;
+        top: 18px;
+        right: 45px;
+    }
+    .pokeball{
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: flex-start
+    }
+    .pokeball1{
+        width: 30px;
+        margin-top: 50%;
+        margin-right: 20px;
+    }
+    .nav{
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 0px;
+        margin-top: -130px;
+        text-align: center;
+     }
+     .menubox{
+        width: 60px;
+        margin-right: 30px;
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+     }
+     .selectMenu{
+        background: #31A9CE;
+        border: 3px solid #F5ED02;
+        box-sizing: border-box;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 200;
+        width: 120%;
+     }
+     .titleMenu{
+        text-align: center;
+        font-size: smaller;
+        -webkit-text-fill-color: #FFCB05;
+        letter-spacing: 2.5pt;
+        text-shadow: 2px 2px 3px black;
+     }
+     .option{
+        background: #31A9CE;
+        border: 3px solid #F5ED02;
+        box-sizing: border-box;
+        border-radius: 20px;
+        max-height: 114px;
+        z-index: 100;
+        width: 119px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+     }
+    
+     .option.active{
+        display: block;
+        margin-top: 4%;
+        background: #31A9CE;
+        border: 3px solid #F5ED02;
+        box-sizing: border-box;
+        border-radius: 15px;
+        max-height: 300px;
+        z-index: 100;
+        width: 120%;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+     }
+     .op{
+        text-align: center;
+        font-size: smaller;
+        letter-spacing: 2.5pt;
+        text-shadow: 2px 2px 3px black;
+        border-bottom: 2px solid #F5ED02;
+    
+     }
+     .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer{
+        font-family: 'pokemon-solid';
+        font-style: normal;
+        font-weight: normal;
+        font-size: x-small;
+        text-align: center;
+        color: white;
+        letter-spacing: 2.5pt;
+        text-shadow: 1px 1px 2px black;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        margin: 12px;
+    }
+    .pokelist{
+        color: white;
+        letter-spacing: 2px;
+        text-align: center;
+        text-shadow: 2px 2px 3px black;
+        text-transform: capitalize;
+        font-size: small;
+        align-self: flex-end;
+        margin: 10px;
+        background: rgba(60, 59, 43, 0.6);
+        border-radius: 20px;
+    }
+    .pokeimg{
+        width: 55px;
+        margin: 5px;
+        display: block;
+    }
+    .namepoke{
+        text-align: center;
+        text-rendering: optimizespeed;
+        position: absolute;
+        margin: 1px;
+        line-height: 10px;
+        display: block;
+        font-size: x-small;
+       
+    }
+    .loader{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-width: 20px;
+        min-height: 20px;
+        z-index: 1000;
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .gifloader {
+        width: 90%;
+        height: 90%;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(240, 203, 203);
+        border-radius: 4px;
+        
+    }
+    ::-webkit-scrollbar-thumb:active {
+        background-color: #999999;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b3b3b3;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    ::-webkit-scrollbar-track {
+        background: #e1e1e1;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-track:hover, 
+    ::-webkit-scrollbar-track:active {
+      background: #d4d4d4;
+    }
+    .pokeballGira{
+        width: 75px;
+        vertical-align: bottom;
+        margin: 5px;
+    }
+    .modal{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        overflow: hidden;
+        outline: 0;
+        z-index: 1072;
+        display: flex;
+        background-color: rgba(0,0,0,0.5) !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .close{
+        float: right;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        cursor: pointer;
+        color: red;
+        width: 40px;
+        z-index: 4000;
+        
+        font-family: 'pokemon-solid';
+        text-shadow: 3px 3px 3px white;
+    }
+    button.close {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-appearance: none;
+    }
+    .header_modal .close{
+        margin: -1rem -1rem -1rem auto;
+    }
+    
+    .contenedor_modal {
+        width: 100%;
+        margin-left: 30%;
+        margin-top: 10%;
+        margin-right: 30%;
+        margin-bottom: 20%;
+        background: rgba(29, 44, 94, 0.97);
+        border: 3px solid #F5ED02;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 10px;
+        color: white ;
+        font-family: monospace;
+        text-align: center;
+    }
+    
+    .modalimg  {
+        z-index: 1000;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .letrasdentromodal {
+    margin: 3%;
+    }
+    
+    .cuerpo_modal {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}

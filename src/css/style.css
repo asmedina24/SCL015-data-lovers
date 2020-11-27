@@ -25,18 +25,21 @@ src: url('../font/pokemonsolid.ttf') format('truetype')
         align-items: center;
     }
     .contenedor1{
-        width: 100%;
+        width: 40%;
         height: auto;
         top: 0;
         left: 0;
-        margin: 5px;
+        margin: 2px;
         position: relative;
     }
     .contenedor2{
-        top: 10px !important;
+        top: 40px !important;
+        width: 80%;
+        position: relative;
+        margin-top: 50%
     }
     .logo{
-        width: 100% !important;
+        width: 80% !important;
         height: auto;
     }
     .box{
@@ -61,7 +64,7 @@ src: url('../font/pokemonsolid.ttf') format('truetype')
         justify-content: end;
         align-items: center;
         position: relative;
-        top: -20px !important;
+        top: -9px !important;
     }
     #footer{
         font-family: 'pokemon-solid';
@@ -164,6 +167,8 @@ src: url('../font/pokemonsolid.ttf') format('truetype')
 }
 /* destopk */
 /* default */
+
+
 *{
     margin: 0;
     padding: 0;

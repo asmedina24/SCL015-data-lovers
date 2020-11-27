@@ -45,7 +45,7 @@ const funciones = {
     filterEgg : (pokemon, condition) => {
         const huevos = pokemon.filter ( pokemon => pokemon.egg.includes (condition));
         return huevos;
-    } 
+    }, 
 
     }
     export default funciones;  
