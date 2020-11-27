@@ -27,6 +27,7 @@ selectEggs.addEventListener("click", () => {
 })
 function prev_next(prev_dev){
     let pre_next=''
+   // eslint-disable-next-line no-prototype-builtins
    if (prev_dev.hasOwnProperty("next-evolution")) {
         let evolucion = prev_dev["next-evolution"]
         pre_next+='<div><strong>Evolución:</strong><span>'
@@ -36,6 +37,7 @@ function prev_next(prev_dev){
         pre_next +='</span></div>'
     }
     
+    // eslint-disable-next-line no-prototype-builtins
     if (prev_dev.hasOwnProperty("prev-evolution")){
         let evolucion = prev_dev["prev-evolution"]
         pre_next+='<div><strong>Pre-evolución:</strong><span>'
@@ -155,3 +157,15 @@ let tipo_pokemon = document.getElementsByClassName("options");
         false);
     }
 
+let tipo_Huevos = document.getElementsByClassName("optionsEgg");
+for (let i= 0; i < tipo_Huevos.length; i++) {
+   let element = tipo_Huevos[i];
+   element.addEventListener ("click", function (event) {
+       event.preventDefault();
+       let conditionHuevo = element.id;
+       pokemontemp = funciones.filterEgg(pokemon, conditionHuevo)
+       document.getElementById("opmenu3").classList.remove("active")
+       mostrarlista()
+   })
+   
+}
