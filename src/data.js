@@ -29,9 +29,10 @@ const funciones = {
     ordenarnum: (pokemon) => {
       const result2 =  pokemon.sort(function (a, b) {
           if (a.num > b.num) {
-           // return 1;
+            
+            return 1;
           }
-          
+          return -1
         })
         return result2;
     
@@ -39,7 +40,7 @@ const funciones = {
 
     revenum: (pokemon) => {
        const result23= pokemon.sort(function(a, b) {
-           if (b.num < a.num) {
+           if (b.num - a.num) {
                return -1
            }
         })
