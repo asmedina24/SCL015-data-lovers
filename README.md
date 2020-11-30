@@ -1,7 +1,7 @@
 # PokeSearch
  ![PokeSearch](https://caroline-jeldres.github.io/SCL015-data-lovers/src/imgReadme/Logo1.png) 
- ![PokeSearch](https://caroline-jeldres.github.io/SCL015-data-lovers/src/imgReadme/Logo2.png)
-
+ 
+ 
 ## Índice
 
 - [Pokémon Go](#pokemon-go)
