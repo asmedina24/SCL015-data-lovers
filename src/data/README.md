@@ -1,37 +1,28 @@
-# Pokémon
+# PokeSearch
+ ![PokeSearch](https://pokemongolive.com/img/posts/nov2019-events.jpg)
 
-Pokémon GO es una experiencia de juego internacional que cuenta con más de mil
-millones de descargas y ha sido nombrada "el mejor juego para móviles" por
-Game Developers Choice Awards y "la mejor aplicación del año" por TechCrunch
-(tomado de Google Play). Los usuarios del juego se convierten en "Maestros/
-entrenadores de Pokémon" y pueden:
+## Índice
 
-- **Descubrir el mundo Pokémon:** explorar y descubrir nuevos Pokémon allá
-  donde vayan.
-- **Atrapar** distintos Pokémon para completar su Pokédex.
-- **Pelear** contra Pokémon de otros entrenadores y conquistar un gimnasio.
-- **Competir** en épicos combates contra otros entrenadores.
-- **Hacer equipo** con otros entrenadores para atrapar poderosos Pokémon
-  durante las incursiones.
+- [Pokémon Go](#pokemon-go)
+  - [Índice](#índice)
+  - [1. Preámbulo](#1-preámbulo)
+  - [2. Definición del proyecto](#2-definición-del-proyecto)
+    - [2.1 Perfil de usuario](#21-perfil-de-usuario)
+    - [2.2 Planteamiento del problema](#22-planteamiento-del-problema)
+  - [3. Resolución del problema](#3-resolución-del-problema)
+  - [4. Decisiones de diseño](#4-decisiones-de-diseño)
+  - [5. Prototipos y recursos](#5-prototipos-y-recursos)
+  - [6. Encuesta](#6-encuesta)
+  - [7. Acceso a la plataforma](#7-acceso-a-la-plataforma)
+  - [8. Autores](#8-autores)
 
-## Hallazgos
+## 1. Preámbulo
 
-Para entender mejor qué necesidades complementarias a la app tienen los
-usuarios, hicimos una rápida investigación (research) y estos son algunos
-de los hallazgos.
+PokeSearch es una herramienta que cuenta con los datos de pokémon de primera y 
+segunda generación, enfocada a los datos del famoso juego de Pokémon Go de Niantic, 
+que permite a los diferentes usuarios, ordenar, filtrar, buscar y calcular, la 
+información contenida en la Data de los distintos pokémon.
 
-- Los Pokémon tienen características únicas que determinan las decisiones que
-  toma el usuario (tipo, debilidad, peso, multiplicador, etc.)
-- Un maestro Pokémon antes de salir a casar los Pokémon tienen que:
-  saber el top 10 de frecuencia de aparición de los Pokémon.
-- Los Pokémon tienen distintos tipos y debilidades de combate. Estas
-  características son importantes cuando un maestro Pokémon elige al Pokémon
-  más adecuado para su batalla. Hay veces que tiene que elegir a los que
-  tienen menos cantidad de debilidades y saber de que tipo son. Por ello, es
-  importante para un maestro Pokémon poder ordenarlos por estas 2
-  características.
-- Los Pokémon evolucionan y es importante para un
-  maestro Pokémon saber cuántas y cuáles son las evoluciones que tienen antes y
-  después.
-- Los Pokémon se alimentan de caramelos y un maestro Pokémon necesita saber
-  cuántos caramelos necesita un Pokémon para evolucionar.
+La misión es capturar y entrenar a los Pokémon (monstruos de bolsillo que le dan vida al juego).
+Cabe destacar que existe una gran fanaticada de esta marca, sobre todo con su versión móvil, Pokémon Go.
+
