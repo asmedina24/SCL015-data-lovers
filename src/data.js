@@ -59,7 +59,10 @@ const funciones = {
         const huevos = pokemon.filter ( pokemon => pokemon.egg.includes (condition));
         return huevos;
     }, 
-
+    search: (pokemon, text) => {
+        const search=pokemon.filter (pokemon => pokemon.name.includes(text));
+        return search
+    }
     }
     export default funciones;  
 
