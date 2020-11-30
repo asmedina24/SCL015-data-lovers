@@ -1,250 +1,230 @@
 /* Pantalla movil */
 
 @font-face {
-font-family: 'pokemon-solid';
-src: url('../font/pokemonsolid.ttf') format('truetype')
+  font-family: "pokemon-solid";
+  src: url("../font/pokemonsolid.ttf") format("truetype");
 }
-@media (min-width:320px) and (max-width:425px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        background-image: url(../img/fondo3.jpg) !important;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-    div{
-        margin: 5px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenedor1{
-        width: 40%;
-        height: auto;
-        top: 0;
-        left: 0;
-        margin: 2px;
-        position: relative;
-    }
-    .contenedor2{
-        top: 40px !important;
-        width: 80%;
-        position: relative;
-        margin-top: 50%
-    }
-    .logo{
-        width: 80% !important;
-        height: auto;
-    }
-    .box{
-        width: 100%;
-        height: auto;
-        margin-right: 80px !important;
-    }
-
-    .buttons{
-        text-align: center;
-    }
-    .buttonI{
-        width: 100% !important;
-        max-width: 260px !important;
-    }
-    .buttonII{
-        width: 100% !important;
-        min-width: 260px !important;
-    }
-    .footer{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        position: relative;
-        top: -9px !important;
-    }
-    #footer{
-        font-family: 'pokemon-solid';
-        font-style: normal;
-        font-weight: normal;
-        font-size: xx-small !important;
-        text-align: center;
-        color: #FFCB05;
-        letter-spacing: 2.5pt;
-        text-shadow: 2px 2px 3px black;
-    }
-}
-
-/* tamaño tablet */
-@media (min-width:426px) and (max-width:768px) and (orientation: portrait){
-    *{
-        margin: 0;
-        padding: 0;
-       
-    }
-    body{
-        background-image: url(../img/fondo3.jpg) !important;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-    div{
-        margin: 5px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contenedor1{
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        margin: 5px;
-        position: relative;
-    }
-    .contenedor2{
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        margin: 5px;
-        justify-content: center;
-        position: relative;
-        align-items: center;
-        top: 60px !important;
-    }
-    .logo{
-        width: 70%;
-        height: auto;
-        margin-right: 180px;
-    }
-    .box{
-        width: 100%;
-        height: auto;
-        margin-right: 450px !important;
-    }
-    
-    .buttons{
-        text-align: center;
-    }
-    .buttonI{
-        width: 100%;
-        max-width: 50px;
-    }
-    .rotom{
-        position: absolute !important;
-        width: 100% !important;
-        max-width: 100px !important;
-        display: flex !important;
-    }
-    .buttonII{
-        width: 80%;
-        min-width: 300px;
-    }
-    .footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 40px !important;
-    }
-    #footer{
-        font-family: 'pokemon-solid';
-        font-style: normal;
-        font-weight: normal;
-        font-size: large;
-        text-align: center;
-        color: #FFCB05;
-        letter-spacing: 2.5pt;
-        text-shadow: 2px 2px 3px black;
-    }
-}
-/* destopk */
-/* default */
-
-
-*{
-    margin: 0;
-    padding: 0;
-   
-}
-body{
-    background-image: url(../img/fondo1.jpg);
+@media (min-width: 320px) and (max-width: 578px) {
+  
+  body {
+    background-image: url(../img/fondo3.jpg) !important;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+  
+  .logo {
+    width: 83% !important;
+    height: auto;
+    margin-bottom: 130px;
+  }
+
+ .box {
+    margin-right: 100px !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 26%;
+    top: 100px;
+   }
+
+.contenedor2{
+  top: 500px;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  
 }
-div{
+
+.buttonI {
+  width: 50%;
+}   
+
+.footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: -100px !important;
+  }
+  #footer {
+    font-family: "pokemon-solid";
+    font-style: normal;
+    font-weight: normal;
+    font-size: xx-small !important;
+    text-align: center;
+    color: #ffcb05;
+    letter-spacing: 2.5pt;
+    text-shadow: 2px 2px 3px black;
+  }
+}
+
+/* tamaño tablet */
+@media (min-width: 585px) and (max-width: 769px) and (orientation: portrait) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url(../img/fondo1.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  div {
     margin: 5px;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
-}
-.contenedor1{
+    align-items: center;
+  }
+  .contenedor1 {
     width: 100%;
-    max-width: 600px;
     height: auto;
     top: 0;
     left: 0;
     margin: 5px;
     position: relative;
-    align-items: center;
-}
-.contenedor2{
+  }
+  .contenedor2 {
     width: 100%;
     height: auto;
     top: 0;
     left: 0;
-    margin: 5px;
+    margin: 75px;
     justify-content: center;
     position: relative;
     align-items: center;
-}
-.logo{
+    top: 60px !important;
+  }
+  .logo {
     width: 70%;
     height: auto;
-}
-.box{
+    margin-right: 180px;
+  }
+  .box {
     width: 100%;
     height: auto;
-    margin-right: 300px;
-}
+    margin-right: 450px !important;
+  }
 
-.buttons{
+  .buttons {
     text-align: center;
-}
-.buttonI{
+  }
+  .buttonI {
     width: 100%;
-    max-width: 300px;
-}
-
-.buttonII{
+    max-width: 50px;
+  }
+  .rotom {
+    position: absolute !important;
+    width: 100% !important;
+    max-width: 100px !important;
+    display: flex !important;
+  }
+  .buttonII {
     width: 80%;
     min-width: 300px;
-}
-.footer{
+  }
+  .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 100px;
-}
-#footer{
-    font-family: 'pokemon-solid';
+    top: 40px !important;
+  }
+  #footer {
+    font-family: "pokemon-solid";
     font-style: normal;
     font-weight: normal;
     font-size: large;
     text-align: center;
-    color: #FFCB05;
+    color: #ffcb05;
     letter-spacing: 2.5pt;
     text-shadow: 2px 2px 3px black;
+  }
+}
+/* destopk */
+/* default */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/fondo1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+div {
+  margin: 5px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contenedor1 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  position: relative;
+  align-items: center;
+}
+.contenedor2 {
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.logo {
+  width: 70%;
+  height: auto;
+}
+.box {
+  width: 100%;
+  height: auto;
+  margin-right: 300px;
+}
+
+.buttons {
+  text-align: center;
+}
+.buttonI {
+  width: 100%;
+  max-width: 300px;
+}
+
+.buttonII {
+  width: 80%;
+  min-width: 300px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+#footer {
+  font-family: "pokemon-solid";
+  font-style: normal;
+  font-weight: normal;
+  font-size: large;
+  text-align: center;
+  color: #ffcb05;
+  letter-spacing: 2.5pt;
+  text-shadow: 2px 2px 3px black;
 }
