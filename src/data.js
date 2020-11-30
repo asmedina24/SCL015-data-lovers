@@ -30,7 +30,7 @@ const funciones = {
       const result2 =  pokemon.sort(function (a, b) {
           if (a.num > b.num) {
             
-            return 1;
+            //return 1;
           }
           return -1
         })
@@ -54,7 +54,6 @@ const funciones = {
        const result = pokemon.filter( pokemon => pokemon.type.includes(condition));
        return result;
     },
-
 
     filterEgg : (pokemon, condition) => {
         const huevos = pokemon.filter ( pokemon => pokemon.egg.includes (condition));
