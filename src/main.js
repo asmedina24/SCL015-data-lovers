@@ -95,19 +95,7 @@ function mostrarlista() {
             },
             false);
         }
-        // for (let i = 0; i < elements.length; i++) {
-        //     let elemento = elements[i]
-        // elemento.addEventListener("click", function () {
-        //     pokelist.innerHTML = ""
-        //     pokelist += (`<div id="${pokemon[i].num}"class="pokelist"><img class="pokeimg" src="img/pokebolagira.gif"/> </div>`);
-        //     console.log("hola")
-        //     // document.getElementByClassName('pokeballGira').style.display = "block";
-        //     // document.getElementByClassName('pokeimg').style.display = "none";
-        //     // document.getElementByClassName('namepoke').style.display = "none";
-        // }
-        // );
-        // }
-       
+        
     }, tiempo);
     setTimeout(function () {
         document.getElementById("loader").style.display = "none";
@@ -171,4 +159,10 @@ for (let i= 0; i < tipo_Huevos.length; i++) {
        mostrarlista()
    })
 }
+let search=document.getElementById("search1");
+search.addEventListener("keyup",(text)=>{
+ let searchPokemon=text.target.value.toLowerCase()   
+ pokemontemp=funciones.search(pokemon, searchPokemon)
+ mostrarlista()
+})
 })

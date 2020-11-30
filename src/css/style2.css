@@ -55,7 +55,10 @@ header{
     font-size: medium;
     color: #FFCB05;
     letter-spacing: 2.5pt;
- 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
 }
 ::-webkit-input-placeholder { 
     color: rgba(252, 69, 109, 0.836);
@@ -184,11 +187,16 @@ header{
     margin: 30px;
     background: rgba(60, 59, 43, 0.6);
     border-radius: 20px;
+    cursor: pointer;
 }
 .pokeimg{
     width: 75px;
     margin: 5px;
-    display: block;
+    display:block;
+    transition: all .9s ease;
+}
+.pokeimg:hover{
+    transform: scale(1.70);
 }
 .namepoke{
     text-align: center;
