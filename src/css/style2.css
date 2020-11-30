@@ -212,56 +212,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.modal{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    overflow: hidden;
-    outline: 0;
-    z-index: 1072;
-    display: block;
-    background-color: rgba(0,0,0,0.5) !important;
-    justify-content: center;
-    align-items: center;
-}
 
-.contenedor_modal{
-    width: 100%;
-    margin-left: 30%;
-    margin-top: 10%;
-    margin-right: 30%;
-    margin-bottom: 20%;
-    background: #31A9CE;
-    border: 3px solid #F5ED02;
-    box-sizing: border-box;
-    border-radius: 20px;
-    opacity: 3 !important;
-    padding: 10px;
-    color: black;
-    font-family: monospace;
-}
-
-button.close {
-    float: right;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: red;
-    font-family: 'pokemon-solid';
-    text-shadow: 4px 0 #fff;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
-
-.header_modal .close{
-    padding: 1rem;
-    margin: -1rem -1rem -1rem auto;
-}
 .imgloader{
     margin-top: 200px;
 }
@@ -293,19 +244,82 @@ button.close {
     vertical-align: bottom;
     margin: 5px;
 }
-.modalimg{
-    width: 300px;
-}
-.modaldatos{
-    font-family: cursive;
-    font-size: large;
-     color: white;
-}
-.modelabout{
-    font-family: cursive;
-    font-size: large;
-    color: white;
-    border-bottom-color: yellow;
-    position: relative;
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    z-index: 1072;
     display: flex;
+    background-color: rgba(0,0,0,0.5) !important;
+    justify-content: center;
+    align-items: center;
 }
+.close{
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    color: red;
+    width: 70px;
+    z-index: 4000;
+    
+    font-family: 'pokemon-solid';
+    text-shadow: 3px 3px 3px white;
+}
+button.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: red;
+    font-family: 'pokemon-solid';
+    text-shadow: 4px 0 #fff;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.header_modal .close{
+    margin: -1rem -1rem -1rem auto;
+}
+
+.contenedor_modal {
+    width: 100%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    background: rgba(29, 44, 94, 0.97);
+    border: 3px solid #F5ED02;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    color: white ;
+    font-family: monospace;
+    text-align: center;
+}
+
+.modalimg  {
+    z-index: 1000;
+    width: 100%;
+    max-width: 300px;
+
+ }
+
+.letrasdentromodal {
+margin: 3%;
+}
+
+.cuerpo_modal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+

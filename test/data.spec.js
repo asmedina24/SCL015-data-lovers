@@ -2,8 +2,10 @@ import funciones from '../src/data.js';
 
 
 const pokefi = [{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ];
-const pokefinum= [{ num: "001"}, { num: "251"}, { num: "150"}]
-describe('objeto', () => {
+//const ordennume = [{ name: "celeri", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" }, { name: "pikachu", type: "poison", num: "0111" } ];
+
+
+describe('objeto', () =>{
   it('es un objeto', () => {
     expect(typeof funciones).toBe('object');
   });
@@ -27,24 +29,32 @@ describe('objeto', () => {
       expect(funciones.ordenarZA(pokefi)).toEqual([{ name: "pikachu", type: "poison" } , { name: "celeri", type: "water" },{ name: "asa", type: "water" }]); // expect lo que recibe y tobe es lo que se espera
     });
    });
-  describe('ordenarnum', () => {    //describe la funcion
+    describe('del 1 al 251', () => {    //describe la funcion
     it('se espera una funcion', () => {    // it lo que se espera como comentario 
-      expect(typeof funciones.ordenarnum).toBe('function'); // expect funcion como talñ funcion q traere de data
+      expect(typeof funciones.ordenarnum).toBe('function');
+    });
     });
 
-    it('ordenarnum', () => {
-      expect(funciones.ordenarnum(pokefinum)).toEqual([1, 150, 251]); // expect lo que recibe y tobe es lo que se espera
-    });
-  });
-  describe('revenum', () => {    //describe la funcion
+  
+  describe('del 251 al 1', () => {    //describe la funcion
     it('se espera una funcion', () => {    // it lo que se espera como comentario 
-      expect(typeof funciones.revenum).toBe('function'); // expect funcion como talñ funcion q traere de data
-    });
+      expect(typeof funciones.revenum).toBe('function');
 
-    it('revenum', () => {
-      expect(funciones.revenum(pokefinum)).toEqual([251, 150, 1]); // expect lo que recibe y tobe es lo que se espera
     });
-  });
+    
+    it('ordenar de num 1 a 251', () => {
+        expect(funciones.ordenarnum(pokefi)).toEqual([{ name: "asa", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" } ]); // expect lo que recibe y tobe es lo que se espera
+      });
+
+      /*it('ordenar de num 251 a 251', () => {
+        expect(funciones.ordenarnum(pokefi)).toEqual([{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ]); // expect lo que recibe y tobe es lo que se espera
+      });*/
+  
+
+  }); 
+
+
+
   describe('filtrar', () => {
     it('se espera una funcion de filtrado', () => {
       expect(typeof funciones.filter).toBe('function');
@@ -54,6 +64,4 @@ describe('objeto', () => {
         expect(funciones.filter(pokefi)).toEqual([]);
     });
   });
-
-});
-
+})
