@@ -1,5 +1,8 @@
-import data from "./data/pokemon.js"
+// import data from "./data/pokemon.js"
 import funciones from './data.js'
+
+fetch ('https://caroline-jeldres.github.io/SCL015-data-lovers/src/data/pokemon.json')
+.then(response => response.json()).then(data => {
 
 let pokemon = data.pokemon;
 let pokemontemp = data.pokemon;
@@ -157,3 +160,15 @@ let tipo_pokemon = document.getElementsByClassName("options");
         false);
     }
 
+let tipo_Huevos = document.getElementsByClassName("optionsEgg");
+for (let i= 0; i < tipo_Huevos.length; i++) {
+   let element = tipo_Huevos[i];
+   element.addEventListener ("click", function (event) {
+       event.preventDefault();
+       let conditionHuevo = element.id;
+       pokemontemp = funciones.filterEgg(pokemon, conditionHuevo)
+       document.getElementById("opmenu3").classList.remove("active")
+       mostrarlista()
+   })
+}
+})

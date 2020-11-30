@@ -2,13 +2,17 @@ import funciones from '../src/data.js';
 
 
 const pokefi = [{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ];
-//const ordennume = [{ name: "celeri", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" }, { name: "pikachu", type: "poison", num: "0111" } ];
+const num = [{ "num": "80"}, { "num": "82"}, { "num": "86"}];
+const num2 = [{ "num": "86"}, { "num": "82"}, { "num": "80"}];
+const egg = [{name: "tobby", "egg": "2 km"}, {name: "luna", "egg": "5 km"}];
+
 
 
 describe('objeto', () =>{
   it('es un objeto', () => {
     expect(typeof funciones).toBe('object');
   });
+  });   
 
   describe('ordenarAZ', () => {    //describe la funcion
     it('se espera una funcion', () => {    // it lo que se espera como comentario 
@@ -34,8 +38,7 @@ describe('objeto', () =>{
       expect(typeof funciones.ordenarnum).toBe('function');
     });
     });
-
-  
+     
   describe('del 251 al 1', () => {    //describe la funcion
     it('se espera una funcion', () => {    // it lo que se espera como comentario 
       expect(typeof funciones.revenum).toBe('function');
@@ -43,17 +46,14 @@ describe('objeto', () =>{
     });
     
     it('ordenar de num 1 a 251', () => {
-        expect(funciones.ordenarnum(pokefi)).toEqual([{ name: "asa", type: "water", num: "01"}, { name: "asa", type: "water", num: "011" } ]); // expect lo que recibe y tobe es lo que se espera
+        expect(funciones.revenum(num)).toEqual(num2); // expect lo que recibe y tobe es lo que se espera
       });
 
-      /*it('ordenar de num 251 a 251', () => {
-        expect(funciones.ordenarnum(pokefi)).toEqual([{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ]); // expect lo que recibe y tobe es lo que se espera
-      });*/
-  
-
-  }); 
-
-
+      it('ordenar de num 251 a 1', () => {
+        expect(funciones.ordenarnum(num)).toEqual(num); // expect lo que recibe y tobe es lo que se espera
+      });
+        
+    }); 
 
   describe('filtrar', () => {
     it('se espera una funcion de filtrado', () => {
@@ -64,4 +64,16 @@ describe('objeto', () =>{
         expect(funciones.filter(pokefi)).toEqual([]);
     });
   });
-})
+
+  describe('filtrarhuevos', () => {
+    it('se espera una funcion de filtrado huevos', () => {
+      expect(typeof funciones.filterEgg).toBe('function');
+    });
+
+    it('funcion de filtrado por huevos', () => {
+      expect(funciones.filterEgg(egg)).toEqual([]);
+    });
+    });
+  
+
+  

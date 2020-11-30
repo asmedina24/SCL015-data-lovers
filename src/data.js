@@ -27,13 +27,24 @@ const funciones = {
     },
 
     ordenarnum: (pokemon) => {
-        pokemon.sort((a, b) => a.num - b.num)
-       
+      const result2 =  pokemon.sort(function (a, b) {
+          if (a.num > b.num) {
+           // return 1;
+          }
+          
+        })
+        return result2;
+    
     },
 
     revenum: (pokemon) => {
-       pokemon.sort((a, b) => b.num - a.num)
-       
+       const result23= pokemon.sort(function(a, b) {
+           if (b.num < a.num) {
+               return -1
+           }
+        })
+        
+       return result23;
     },
 
     filter: (pokemon, condition ) => { // condicion sale de main js. 
@@ -42,7 +53,14 @@ const funciones = {
        const result = pokemon.filter( pokemon => pokemon.type.includes(condition));
        return result;
     },
-    }   
+
+
+    filterEgg : (pokemon, condition) => {
+        const huevos = pokemon.filter ( pokemon => pokemon.egg.includes (condition));
+        return huevos;
+    }, 
+
+    }
     export default funciones;  
 
 
