@@ -1,7 +1,7 @@
 # PokeSearch
  ![PokeSearch](https://caroline-jeldres.github.io/SCL015-data-lovers/src/imgReadme/Logo1.png) 
  
- 
+
 ## Índice
 
 - [Pokémon Go](#pokemon-go)
@@ -12,7 +12,7 @@
     - [2.2 Planteamiento del problema](#22-planteamiento-del-problema)
   - [3. Resolución del problema](#3-resolución-del-problema)
   - [4. Prototipos y recursos](#4-dprototipos-y-recursos)
-  - [5. Encuesta](#5-encuesta)
+  - [5. Historia de Usuario](#5-historia-de-usuario)
   - [6. Acceso a la plataforma](#6-acceso-a-la-plataforma)
   - [7. Autores](#7-autores)
 
@@ -52,13 +52,13 @@ Esta interfaz ofrece un menú muy visual, donde se le permite al usuario la opci
 
 * Organización ([Trello](https://trello.com/b/YGiU1FFL/data-lovers))
 
-## 5. Encuesta
+## 5. Historia de Usuario
 
 Antes de comenzar con el proyecto, se realizo una investigación para conocer y definir el perfil de usuario, para ello se una encuesta y entrevista a través de grupos y paginas de Facebook, además de cercanos relacionados con pokémon, permitiendo determinar aquellos aspectos de valor que debían rescatarse en la aplicación que se desarrollaría. Dicho estudio, se aplicó a 18 jugadores promedio de distintas edades y rebeló cuáles serían los filtro o herramientas que les serian útiles.
 
 Finalmente, la data recolectada se expresa en la funcionalidades habilitadas en la aplicación y definieron las historias de usuarios a desarrollar.
 
-* Historias de Usuario seleccionadas ([Historia de usuario](https://www.figma.com/proto/mlekiWaZEfPKZRXJwKQY1Z/prototipo?node-id=184%3A6&viewport=665%2C295%2C0.2237890064716339&scaling=min-zoom))
+* Historias de Usuario seleccionadas ([Historia de usuario](https://www.figma.com/proto/mlekiWaZEfPKZRXJwKQY1Z/prototipo?node-id=184%3A6&viewport=1295%2C237%2C0.4990520477294922&scaling=scale-down))
 
 ## 6. Acceso a la Plataforma
 
