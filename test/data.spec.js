@@ -75,5 +75,15 @@ describe('objeto', () =>{
     });
     });
   
-
+    describe('botonbuscar', () => {
+      it('se espera una funcion buscar', () => {
+        expect(typeof funciones.search).toBe('function');
+      });
+      
+      it('funcion de buscar se espera tobby', () => {
+        expect(funciones.search(egg, "tobby")).toEqual([{name: "tobby", egg: "2 km"}]);
+      });
+      });
+   
   
+
