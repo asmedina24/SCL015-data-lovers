@@ -63,7 +63,17 @@ const funciones = {
     search: (pokemon, text) => {
         const search=pokemon.filter (pokemon => pokemon.name.includes(text));
         return search
-    }
+    },
+    calcular: (pokemon, type) =>{
+        let percentajeType= [];
+        for (let i=0;i < pokemon.length; i++){
+            if(pokemon[i].type.includes(type)){
+                percentajeType.push(pokemon[i].type);
+            }
+            return((percentajeType.length) / 251 * 100).toFixed(1) + " % "
+        }
+
+    },
     }
     export default funciones;  
 

@@ -134,6 +134,8 @@ revenum.addEventListener("click", (event) => {
 )
     mostrarlista()
 
+    
+
 // Filtros por tipo 
 let tipo_pokemon = document.getElementsByClassName("options");
     for (let i = 0; i < tipo_pokemon.length; i++) {
