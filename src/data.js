@@ -67,11 +67,12 @@ const funciones = {
 
     // Funcion calcular %
     calculator: (pokemon, typePokemon) => {
-       let porcenType = []; // crea array vacio
+      
+        let porcenType = []; // crea array vacio
         for (let i = 0; i < pokemon.length; i++) { // recorre la data 
             if (pokemon[i].type.includes(typePokemon)) { // recorre la data q  incluye las coincidencias
                 porcenType.push(pokemon[i].type); // push subir y cambiar el porcentype
-               
+                
             }
            
         }
