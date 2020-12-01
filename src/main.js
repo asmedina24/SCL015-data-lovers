@@ -1,9 +1,19 @@
 // import data from "./data/pokemon.js"
 import funciones from './data.js'
 
-fetch ('https://caroline-jeldres.github.io/SCL015-data-lovers/src/data/pokemon.json')
-.then(response => response.json()).then(data => {
+function getdata() {
+    fetch ('https://caroline-jeldres.github.io/SCL015-data-lovers/src/data/pokemon.json')
+    .then(response => response.json()) //responde json
+    .then(data => { //se ejecute la funcion q estan dentro
+        mostrarTodadata(data)
+        
+    })
+    .catch(error => error) //capturador de errores
+}
 
+window.onload = getdata()
+
+function mostrarTodadata(data)  {
 let pokemon = data.pokemon;
 let pokemontemp = data.pokemon;
 let pokelist = document.getElementById("content");
@@ -17,6 +27,8 @@ const AZ = document.getElementById("AZ");
 const ZA = document.getElementById("ZA");
 const num = document.getElementById("1-251");
 const revenum = document.getElementById("251-1");
+const selectCalcular = document.querySelector("#selectMenu4");
+const optionCalcular = document.querySelector ("#opmenu4");
 
 
 selectOrden.addEventListener("click", () => {
@@ -28,6 +40,13 @@ selectTypes.addEventListener("click", () => {
 selectEggs.addEventListener("click", () => {
     optionsEggs.classList.toggle("active");
 })
+
+selectCalcular.addEventListener ("click", () => {
+    optionCalcular.classList.toggle("active");
+})
+
+
+
 function prev_next(prev_dev){
     let pre_next=''
    // eslint-disable-next-line no-prototype-builtins
@@ -163,8 +182,57 @@ for (let i= 0; i < tipo_Huevos.length; i++) {
 }
 let search=document.getElementById("search1");
 search.addEventListener("keyup",(text)=>{
- let searchPokemon=text.target.value.toLowerCase()   
+ let searchPokemon=text.target.value.toLowerCase() // variable igual al palabras igresadas x usuario en miniscula  
  pokemontemp=funciones.search(pokemon, searchPokemon)
  mostrarlista()
+ 
 })
-})
+
+let calcularTipo = document.getElementsByClassName ("optionsCalcular");
+for (let i= 0; i <calcularTipo.length; i++ ){
+    let calcular = calcularTipo[i];
+    calcular.addEventListener("click", function (event) {
+        event.preventDefault();
+        let typePokemon = calcular.id;
+        pokemontemp = funciones.calculator(pokemon,typePokemon)
+        document.getElementById("opmenu4").classList.remove("active")
+        function mostrarporcentaje() {
+            document.getElementById("loader").style.display = "block";
+            let tiempo = 1
+            setTimeout(function () {
+                pokelist.innerHTML = ""
+                for (let i = 0; i < pokemontemp.length; ++i) {
+                    pokelist.innerHTML += (`<div id="${typePokemon}"class="pokelist">
+                    +-<p class="moda_${calcular}">${typePokemon[i]}</p>
+                    <p class="modal_${calcular}">${pokemontemp[i]}</p>
+                    <div id="modal_${typePokemon}" style="display:none;" class="modal"</div>`)
+                    tiempo *= i
+                }
+               let elements = document.getElementsByClassName("pokelist");
+                for (let i = 0; i < elements.length; i++) {
+                    let elemento = elements[i]
+                    elemento.addEventListener('click', function () {
+                        document.getElementById('modal_' + elemento.id).style.display = "flex";
+                    },
+                    false);
+                }
+                let modales = document.getElementsByClassName("close");
+                for (let i = 0; i < modales.length; i++) {
+                    let elemento = modales[i]
+                    elemento.addEventListener('click', function () {
+                        elemento.closest('.modal').style.display = "none";
+                    },
+                    false);
+                }
+                
+            }, tiempo);
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+            }, 1000);
+        }
+        mostrarporcentaje()
+        
+        //console.log(funciones.calculator(pokemon,typePokemon))
+    })
+}
+}
