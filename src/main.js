@@ -120,8 +120,9 @@ function mostrarTodadata(data) {
     // buscador interno
     let search = document.getElementById("search1");
     search.addEventListener("keyup", (text) => {
+        porcenType.innerHTML = "";
         let searchPokemon = text.target.value.toLowerCase() // variable igual al palabras igresadas x usuario en miniscula  
-        contenedor.mostrarlista(contenedor.search(pokemontemp, searchPokemon))
+        contenedor.mostrarlista(funciones.search(pokemon, searchPokemon))
         
         
     })
