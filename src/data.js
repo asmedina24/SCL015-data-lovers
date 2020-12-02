@@ -1,6 +1,5 @@
 const funciones = {
-
-    
+  
     ordenarAZ: (pokemon) => {
         const test = pokemon.sort(function (a, b) {
             if (a.name > b.name) {
@@ -52,8 +51,6 @@ const funciones = {
     },
 
     filter: (pokemon, condition) => { // condicion sale de main js. 
-        //console.log(pokemon)
-        //console.log(condition)
         const result = pokemon.filter(pokemon => pokemon.type.includes(condition));
         return result;
     },
@@ -70,7 +67,6 @@ const funciones = {
 
     // Funcion calcular %
     calculator: (pokemon, typePokemon) => {
-      
         let porcenType = []; // crea array vacio
         for (let i = 0; i < pokemon.length; i++) { // recorre la data 
             if (pokemon[i].type.includes(typePokemon)) { // recorre la data q  incluye las coincidencias
@@ -85,7 +81,6 @@ const funciones = {
 
 
     
-
 }
 export default funciones;
 
