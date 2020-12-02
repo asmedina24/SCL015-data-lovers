@@ -1,12 +1,9 @@
 import funciones from '../src/data.js';
 
-
 const pokefi = [{ name: "celeri", type: "water" }, { name: "asa", type: "water" }, { name: "pikachu", type: "poison" } ];
 const num = [{ "num": "80"}, { "num": "82"}, { "num": "86"}];
-//const num2 = [{ "num": "86"}, { "num": "82"}, { "num": "80"}];
 const egg = [{name: "tobby", egg: "2 km"}, {name: "luna", egg: "5 km"}];
-
-
+const condicion = "water";
 
 describe('objeto', () =>{
   it('es un objeto', () => {
@@ -84,6 +81,18 @@ describe('objeto', () =>{
         expect(funciones.search(egg, "tobby")).toEqual([{name: "tobby", egg: "2 km"}]);
       });
       });
+
+      describe('calcular', () => {
+        it('se espera una funcion para calcular', () => {
+          expect(typeof funciones.calculator).toBe('function');
+        });
+     
+
+      it('funcion de calcular se espera oporcentaje', () => {
+        expect(funciones.calculator(pokefi, condicion)).toEqual("1%");
+      });
+    });
+      
    
   
 

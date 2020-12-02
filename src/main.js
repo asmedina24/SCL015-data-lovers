@@ -1,5 +1,6 @@
 // import data from "./data/pokemon.js"
 import funciones from './data.js'
+import cont from './data2.js'
 
 function getdata() {
     fetch('https://caroline-jeldres.github.io/SCL015-data-lovers/src/data/pokemon.json')
@@ -28,7 +29,7 @@ function mostrarTodadata(data) {
     const revenum = document.getElementById("251-1");
     let porcenType = document.getElementById("porcentaje");
 
-    funciones.mostrarlista(pokemontemp)
+    cont.mostrarlista(pokemontemp)
 
     selectOrden.addEventListener("click", () => {
         optionsOrden.classList.toggle("active");
@@ -46,28 +47,28 @@ function mostrarTodadata(data) {
         event.preventDefault()
         funciones.ordenarAZ(pokemontemp)
         optionsOrden.classList.remove("active")
-        funciones.mostrarlista(pokemontemp)
+        cont.mostrarlista(pokemontemp)
     }
     )
     ZA.addEventListener("click", (event) => {
         event.preventDefault();
         funciones.ordenarZA(pokemontemp)
         optionsOrden.classList.remove("active")
-        funciones.mostrarlista(pokemontemp)
+       cont.mostrarlista(pokemontemp)
     }
     )
     num.addEventListener("click", (event) => {
         event.preventDefault();
         funciones.ordenarnum(pokemontemp)
         optionsOrden.classList.remove("active")
-        funciones.mostrarlista(pokemontemp)
+       cont.mostrarlista(pokemontemp)
     }
     )
     revenum.addEventListener("click", (event) => {
         event.preventDefault();
         funciones.revenum(pokemontemp)
         optionsOrden.classList.remove("active")
-        funciones.mostrarlista(pokemontemp)
+       cont.mostrarlista(pokemontemp)
     }
     )
     // Filtros por tipo y calculo por tipo
@@ -83,7 +84,7 @@ function mostrarTodadata(data) {
             let pokemonPorcen = funciones.calculator(pokemon, condition)               ;
             optionsTypes.classList.remove("active")
             porcenType.innerHTML = (`<p class="porcentaje">${condition} = ${pokemonPorcen} de la pokedex</p>`)
-            funciones.mostrarlista(pokemontemp)
+           cont.mostrarlista(pokemontemp)
         },
             false);
     }
@@ -97,7 +98,7 @@ function mostrarTodadata(data) {
             let conditionHuevo = element.id;
             pokemontemp = funciones.filterEgg(pokemon, conditionHuevo)
             document.getElementById("opmenu3").classList.remove("active")
-            funciones.mostrarlista(pokemontemp)
+           cont.mostrarlista(pokemontemp)
         })
     }
     // buscador interno
@@ -105,7 +106,7 @@ function mostrarTodadata(data) {
     search.addEventListener("keyup", (text) => {
         let searchPokemon = text.target.value.toLowerCase() // variable igual al palabras igresadas x usuario en miniscula  
         pokemontemp = funciones.search(pokemon, searchPokemon)
-        funciones.mostrarlista(pokemontemp)
+        cont.mostrarlista(pokemontemp)
     })
      
 }

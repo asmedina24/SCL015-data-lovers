@@ -3,7 +3,7 @@
     font-family: 'pokemon-solid';
     src: url('../font/pokemonsolid.ttf') format('truetype')
 }
-
+ @media only screen and (min-width:1200px){
 *{
     margin: 0px;
 }
@@ -337,18 +337,19 @@ margin: 3%;
     color: white ;
     font-family: monospace;
     text-align: center;
-    margin-right: 350px;
-    margin-left: 350px;
+    margin-right: 150px;
+    margin-left: 150px;
     font-size: xx-large;
     border-radius: 15px;
+ 
 }
 .porcentaje:first-letter {
     text-transform: uppercase;
 }
+ }
 
-
-/*Tamaño table*/
-@media (min-width:579px) and (max-width:767px) and (orientation: portrait){
+/*Tamaño tablet*/
+@media (min-width:768px) and (max-width:1200px) {
 
 @font-face {
     font-family: 'pokemon-solid';
@@ -421,11 +422,11 @@ header{
 .pokeball{
     flex-direction: row-reverse;
     display: flex;
-    margin-top: -450%;
+    /*margin-top: 250px;*/
 }
 
 .pokeball1{
-    margin-right: -850;
+    width: 40px;
 }
 
 .nav{
@@ -455,7 +456,7 @@ header{
     position: relative;
     z-index: 200;
     width: 120%;
- }
+     }
  .titleMenu{
     text-align: center;
     font-size: smaller;
@@ -674,16 +675,17 @@ margin: 3%;
     color: white ;
     font-family: monospace;
     text-align: center;
-    margin-right: 50px !important;
-    margin-left: 150px !important;
+    margin-right: 60px !important;
+    margin-left: 60px !important;
     font-size: xx-large;
+    border-radius: 15px;
 }
 
 }
 
 
 /*pantalla movil*/
-@media (min-width:320px) and (max-width:578px){
+@media (min-width:320px) and (max-width:767px){
         
 *{
       margin: 0px;
@@ -852,7 +854,8 @@ margin: 3%;
         display: flex;
         flex-direction: column;
         flex-flow: wrap;
-        margin: 40px;
+        justify-content: center;
+        margin: 10px;
     }
     .pokelist{
         color: white;
@@ -1007,8 +1010,9 @@ margin: 3%;
         color: white ;
         font-family: monospace;
         text-align: center;
-        margin-right: 150px;
-        margin-left: 150px;
-        font-size: xx-large;
+        margin-right: 30px;
+        margin-left: 30px;
+        font-size: x-large;
+        border-radius: 15px;
     }
 }
