@@ -80,6 +80,10 @@ header{
     width: 40px;
     margin-right: 70px;
 }
+.pokeball1:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.40)
+}
 .nav{
     max-width: 1000px;
     margin: auto;
@@ -108,12 +112,20 @@ header{
     z-index: 200;
     width: 120%;
  }
+ .selectMenu:hover{
+    box-shadow: 0 4px 16px rgb(250, 205, 7);
+    transition: all 0.2s ease;
+ }
  .titleMenu{
     text-align: center;
     font-size: smaller;
     -webkit-text-fill-color: #FFCB05;
     letter-spacing: 2.5pt;
     text-shadow: 2px 2px 3px black;
+ }
+ .titleMenu:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.20)
  }
  .option{
     background: #31A9CE;
@@ -155,6 +167,10 @@ header{
     border-bottom: 2px solid #F5ED02;
 
  }
+ .op:hover{
+    transform: scale(1.20);
+    transition: all 0.2s ease;
+ }
  .footer{
     display: flex;
     justify-content: center;
@@ -174,6 +190,7 @@ header{
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
+    justify-content: center;
     /*margin: 40px;*/
 }
 .pokelist{
@@ -216,7 +233,7 @@ header{
     min-height: 1000px;
     z-index: 1000;
     opacity: 0.5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -246,11 +263,6 @@ header{
 ::-webkit-scrollbar-track:hover, 
 ::-webkit-scrollbar-track:active {
   background: #d4d4d4;
-}
-.pokeballGira{
-    width: 75px;
-    vertical-align: bottom;
-    margin: 5px;
 }
 .modal{
     position: fixed;
@@ -561,7 +573,7 @@ header{
     min-height: 1000px;
     z-index: 1000;
     opacity: 0.5;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -893,7 +905,7 @@ margin: 3%;
         min-height: 20px;
         z-index: 1000;
         opacity: 0.5;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
     }

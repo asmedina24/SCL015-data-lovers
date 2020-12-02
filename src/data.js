@@ -31,7 +31,7 @@ const funciones = {
         const result2 = pokemon.sort(function (a, b) {
             if (a.num > b.num) {
 
-                //return 1;
+                return 1;
             }
             return -1
         })
@@ -41,9 +41,10 @@ const funciones = {
 
     revenum: (pokemon) => {
         const result23 = pokemon.sort(function (a, b) {
-            if (b.num - a.num) {
-                return -1
+            if (b.num > a.num) {
+                return 1
             }
+            return -1
         })
 
         return result23;
@@ -76,7 +77,9 @@ const funciones = {
         }
 
         return ((porcenType.length) / 251 * 100).toFixed(0) + `%`; // scar fixed es redonderar 1 es un solo decimal
-    }
+    },
+
+
     
 }
 export default funciones;
