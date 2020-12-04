@@ -15,7 +15,7 @@ window.onload = getdata()
 
 function mostrarTodadata(data) {
     let pokemon = data.pokemon;
-    let pokemontemp = pokemon;
+    let pokemontemp = pokemon; // data pokemon pero filtrada por la funcion a realizar
     const selectOrden = document.querySelector("#selectMenu");
     const optionsOrden = document.querySelector("#opmenu");
     const selectTypes = document.querySelector("#selectMenu2");
@@ -36,17 +36,17 @@ function mostrarTodadata(data) {
     selectOrden.addEventListener("click", () => {
         optionsOrden.classList.toggle("active");
         optionsEggs.classList.remove("active")
-        optionsTypes.classList.remove("active")
+        optionsTypes.classList.remove("active") 
     })
     selectTypes.addEventListener("click", () => {
         optionsTypes.classList.toggle("active");
         optionsOrden.classList.remove("active");
-        optionsEggs.classList.remove("active")
+        optionsEggs.classList.remove("active") 
     })
     selectEggs.addEventListener("click", () => {
         optionsEggs.classList.toggle("active");
         optionsTypes.classList.remove("active");
-        optionsOrden.classList.remove("active");
+        optionsOrden.classList.remove("active"); 
     })
     
     // Funfiones AZ, ZA, 1 a 251, 251 a 1

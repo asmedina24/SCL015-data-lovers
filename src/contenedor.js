@@ -1,9 +1,9 @@
-let contruccion = false;
+let contruccion = false; // viene por defecto el false
 const contenedor = {
     prev_next: (prev_dev) => {
         let pre_next = ''
         // eslint-disable-next-line no-prototype-builtins
-        if (prev_dev.hasOwnProperty("next-evolution")) {
+        if (prev_dev.hasOwnProperty("next-evolution")) { //tiene esta propiedad
             let evolucion = prev_dev["next-evolution"]
             pre_next += '<div><strong>Evolución:</strong><span>'
             for (let index = 0; index < evolucion.length; index++) {
@@ -30,9 +30,9 @@ const contenedor = {
         document.getElementById("loader").style.display = "block";
         setTimeout(function () {
             pokelist.innerHTML = "";
-            if (contruccion===false){
-                pokemodal.innerHTML = "";
-            }
+            if (contruccion===false){  // cargar todo elmodal, cuando se carga vale true
+                pokemodal.innerHTML = "";  //se construye el modal y se oculta, aparece cuando no lo necesite
+            } 
 
             for (let i = 0; i < pokemontemp.length; ++i) {
                 pokelist.innerHTML += (`<div id="${pokemontemp[i].num}"class="pokelist">
@@ -69,7 +69,7 @@ const contenedor = {
         for (let i = 0; i < elements.length; i++) {
             let elemento = elements[i]
             elemento.addEventListener('click', function () {
-                document.getElementById('modal_' + elemento.id).style.display = "flex";
+                document.getElementById('modal_' + elemento.id).style.display = "flex"; //igual al block
             },false);
         }
         let modales = document.getElementsByClassName("close");
